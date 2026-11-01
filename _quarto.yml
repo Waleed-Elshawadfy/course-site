@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs            # rendered site goes here (GitHub Pages can serve /docs)
+  render:
+    - "*.qmd"
+    - "!README.md"
+
+website:
+  title: "Course Materials"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+  page-footer:
+    center: "© Waleed Elshawadfy · Zagazig University "
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+    toc-title: "On this page"

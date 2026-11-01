@@ -1,0 +1,11 @@
+/* Highlight the first (newest) academic year on the home page */
+.quarto-listing-default .quarto-post:first-child .listing-title { font-size: 1.4rem; }
+
+/* Tidy listing tables */
+.quarto-listing-table td, .quarto-listing-table th { padding: .5rem .75rem; }
+
+/* Responsive video */
+video { max-width: 100%; height: auto; border-radius: 6px; }
+
+/* Figures */
+figure.figure img { border: 1px solid #dee2e6; border-radius: 6px; }

@@ -1,0 +1,19 @@
+---
+title: "Course Materials"
+subtitle: "Waleed Elshawadfy · Zagazig University "
+toc: false
+
+---
+
+::: {.callout-tip appearance="simple"}
+## Current year
+[**2026–2027 materials →**](2026-2027/index.qmd)
+:::
+
+## Previous years
+
+[**2025–2026 materials **](2025-2026/index.qmd)
+<!-- *No archived years yet. Last year's folder will be linked here after the next update.* -->
+
+
+

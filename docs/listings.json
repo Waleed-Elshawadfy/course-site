@@ -1,0 +1,50 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/2026-2027/index.html"
+    ]
+  },
+  {
+    "listing": "/2026-2027/ece/antenna-design/index.html",
+    "items": [
+      "/2026-2027/ece/antenna-design/lectures/lecture-01/index.html",
+      "/2026-2027/ece/antenna-design/assignments/assignment-01/index.html"
+    ]
+  },
+  {
+    "listing": "/2026-2027/ece/intro-semiconductors/index.html",
+    "items": [
+      "/2026-2027/ece/intro-semiconductors/lectures/lecture-01/index.html",
+      "/2026-2027/ece/intro-semiconductors/assignments/assignment-01/index.html"
+    ]
+  },
+  {
+    "listing": "/2026-2027/index.html",
+    "items": [
+      "/2026-2027/ece/antenna-design/index.html",
+      "/2026-2027/ece/intro-semiconductors/index.html"
+    ]
+  },
+  {
+    "listing": "/2025-2026/ece/antenna-design/index.html",
+    "items": [
+      "/2025-2026/ece/antenna-design/lectures/lecture-01/index.html",
+      "/2025-2026/ece/antenna-design/assignments/assignment-01/index.html"
+    ]
+  },
+  {
+    "listing": "/2025-2026/ece/intro-semiconductors/index.html",
+    "items": [
+      "/2025-2026/ece/intro-semiconductors/lectures/lecture-01/index.html",
+      "/2025-2026/ece/intro-semiconductors/assignments/assignment-01/index.html"
+    ]
+  },
+  {
+    "listing": "/2025-2026/index.html",
+    "items": [
+      "/2025-2026/ece/antenna-design/index.html",
+      "/2025-2026/ece/intro-semiconductors/index.html"
+    ]
+  }
+]

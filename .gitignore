@@ -1,0 +1,7 @@
+/.quarto/
+*_files/
+# Manim scratch output (final .mp4 files are copied into each lecture's assets/)
+**/_src/media/
+__pycache__/
+
+**/*.quarto_ipynb

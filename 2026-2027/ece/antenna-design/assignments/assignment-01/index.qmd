@@ -1,0 +1,12 @@
+---
+title: "Assignment 01 – Antenna Parameters"
+description: "Directivity, gain, and a link-budget problem. Due: Week 3."
+---
+
+[← Back to course](../../index.qmd)
+
+**Due:** Week 3
+
+1. Explain the difference between directivity and gain.
+2. An antenna has directivity 8 dBi and radiation efficiency 80%. Find its gain in dBi.
+3. Complete the link-budget exercise from Lecture 01.

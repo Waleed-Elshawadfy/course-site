@@ -50,3 +50,11 @@ class BandFormation(Scene):
         gap = Text("Band gap Eg", font_size=24, color=YELLOW).next_to(brace, LEFT)
         self.play(GrowFromCenter(brace), FadeIn(gap))
         self.wait(2)
+
+
+class SimpleTest(Scene):
+    def construct(self):
+        t = Text("Hi, This is a simple text")
+        self.play(Write(t))
+        self.wait()
+

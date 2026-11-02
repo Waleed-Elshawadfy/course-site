@@ -1,0 +1,13 @@
+---
+title: "Lecture 01 – Bode Plots and Frequency Response"
+description: "This lecture covers the fundamental concepts of Bode plots and frequency response in control systems. Students will learn how to analyze and interpret Bode plots, understand the relationship between frequency response and system behavior, and apply these concepts to design and analyze control systems."
+---
+
+[← Back to course](../../index.qmd)
+
+## Learning objectives
+
+- What are Bode plots and how to construct them for different types of systems.
+- How to analyze the frequency response of a system using Bode plots.
+- How to interpret the gain and phase margins from Bode plots and their significance in control system stability.
+- How to plot Bode plots using Python and MATLAB for various transfer functions.

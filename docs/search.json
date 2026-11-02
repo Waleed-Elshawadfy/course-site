@@ -4,126 +4,84 @@
     "href": "years/2026-2027/sem2/index.html",
     "title": "Academic Year 2026–2027",
     "section": "",
-    "text": "← All academic years\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Course\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nCourse\n\n\n\nAbout\n\n\n\nMajor · Level\n\n\n\n\n\n\n\n\nAntenna Design\n\n\nAntenna fundamentals, radiation patterns, wire and patch antennas, and arrays.\n\n\nECE, Third-Year\n\n\n\n\n\n\nIntroduction to Semiconductors\n\n\nCrystal structure, energy bands, charge carriers, and the p–n junction.\n\n\nECE, First-Year\n\n\n\n\n\n\nNo matching items"
+    "text": "← All academic years\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Course\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nCourse\n\n\n\nAbout\n\n\n\nMajor · Level\n\n\n\n\n\n\n\n\nIntroduction to Control Systems\n\n\nThis course introduces the fundamental concepts of control systems, including system modeling, feedback control, stability analysis, and controller design. Students will learn to analyze and design control systems using both classical and modern techniques.\n\n\nECE, Third-Year\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "years/2026-2027/sem2/ece/intro-semiconductors/index.html",
-    "href": "years/2026-2027/sem2/ece/intro-semiconductors/index.html",
+    "objectID": "years/2026-2027/sem2/ece/control-systems/Tutorials/Tutorial-01/index.html",
+    "href": "years/2026-2027/sem2/ece/control-systems/Tutorials/Tutorial-01/index.html",
+    "title": "Lecture 01 – Bode Plots and Frequency Response",
+    "section": "",
+    "text": "← Back to course"
+  },
+  {
+    "objectID": "years/2026-2027/sem2/ece/control-systems/Tutorials/Tutorial-01/index.html#learning-objectives",
+    "href": "years/2026-2027/sem2/ece/control-systems/Tutorials/Tutorial-01/index.html#learning-objectives",
+    "title": "Lecture 01 – Bode Plots and Frequency Response",
+    "section": "1 Learning objectives",
+    "text": "1 Learning objectives\n\nWhat are Bode plots and how to construct them for different types of systems.\nHow to analyze the frequency response of a system using Bode plots.\nHow to interpret the gain and phase margins from Bode plots and their significance in control system stability.\nHow to plot Bode plots using Python and MATLAB for various transfer functions."
+  },
+  {
+    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/index.html",
+    "href": "years/2026-2027/sem1/ece/intro-semiconductors/index.html",
     "title": "Introduction to Semiconductors",
     "section": "",
     "text": "← Back to this year’s courses"
   },
   {
-    "objectID": "years/2026-2027/sem2/ece/intro-semiconductors/index.html#lectures",
-    "href": "years/2026-2027/sem2/ece/intro-semiconductors/index.html#lectures",
+    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/index.html#tutorials",
+    "href": "years/2026-2027/sem1/ece/intro-semiconductors/index.html#tutorials",
     "title": "Introduction to Semiconductors",
-    "section": "1 Lectures",
-    "text": "1 Lectures\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nLecture 01 – Crystal Structure and Energy Bands\n\n\nWhy solids form bands, and what separates metals, semiconductors, and insulators.\n\n\n\n\n\n\nNo matching items"
+    "section": "1 Tutorials",
+    "text": "1 Tutorials\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nTutorial 01 – Crystal Structure and Energy Bands\n\n\nWhy solids form bands, and what separates metals, semiconductors, and insulators.\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "years/2026-2027/sem2/ece/intro-semiconductors/index.html#assignments",
-    "href": "years/2026-2027/sem2/ece/intro-semiconductors/index.html#assignments",
+    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/index.html#assignments",
+    "href": "years/2026-2027/sem1/ece/intro-semiconductors/index.html#assignments",
     "title": "Introduction to Semiconductors",
     "section": "2 Assignments",
     "text": "2 Assignments\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nAssignment 01 – Energy Bands\n\n\nBand gap and intrinsic carrier concentration. Due: Week 3.\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "years/2026-2027/sem2/ece/antenna-design/lectures/lecture-01/index.html",
-    "href": "years/2026-2027/sem2/ece/antenna-design/lectures/lecture-01/index.html",
-    "title": "Lecture 01 – Fundamental Antenna Parameters",
+    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/Tutorials/Tutorial-01/index.html",
+    "href": "years/2026-2027/sem1/ece/intro-semiconductors/Tutorials/Tutorial-01/index.html",
+    "title": "Tutorial 01 – Crystal Structure and Energy Bands",
     "section": "",
     "text": "← Back to course"
   },
   {
-    "objectID": "years/2026-2027/sem2/ece/antenna-design/lectures/lecture-01/index.html#learning-objectives",
-    "href": "years/2026-2027/sem2/ece/antenna-design/lectures/lecture-01/index.html#learning-objectives",
-    "title": "Lecture 01 – Fundamental Antenna Parameters",
-    "section": "1 Learning objectives",
-    "text": "1 Learning objectives\n\nDefine radiation pattern, beamwidth, and directivity.\nRelate gain to directivity and radiation efficiency.\nUse the Friis equation for a simple link budget."
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/antenna-design/lectures/lecture-01/index.html#radiation-pattern-directivity-and-gain",
-    "href": "years/2026-2027/sem2/ece/antenna-design/lectures/lecture-01/index.html#radiation-pattern-directivity-and-gain",
-    "title": "Lecture 01 – Fundamental Antenna Parameters",
-    "section": "2 Radiation pattern, directivity, and gain",
-    "text": "2 Radiation pattern, directivity, and gain\nDirectivity is the ratio of radiation intensity in a given direction to the average radiation intensity:\n\\[\nD(\\theta,\\phi) = \\frac{4\\pi\\, U(\\theta,\\phi)}{P_{\\text{rad}}}\n\\]\nGain includes losses through the radiation efficiency \\(e_r\\):\n\\[\nG = e_r \\, D\n\\]\n\n\n\nNormalized elevation pattern of a half-wave dipole."
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/antenna-design/lectures/lecture-01/index.html#friis-transmission-equation",
-    "href": "years/2026-2027/sem2/ece/antenna-design/lectures/lecture-01/index.html#friis-transmission-equation",
-    "title": "Lecture 01 – Fundamental Antenna Parameters",
-    "section": "3 Friis transmission equation",
-    "text": "3 Friis transmission equation\n\\[\nP_r = P_t \\, G_t \\, G_r \\left(\\frac{\\lambda}{4\\pi R}\\right)^2\n\\]\n\n\n\n\n\n\nNoteExercise\n\n\n\nA 2.4 GHz link has \\(R = 100\\) m, \\(G_t = G_r = 5\\) dBi, and \\(P_t = 20\\) dBm. Estimate \\(P_r\\)."
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/antenna-design/assignments/assignment-01/index.html",
-    "href": "years/2026-2027/sem2/ece/antenna-design/assignments/assignment-01/index.html",
-    "title": "Assignment 01 – Antenna Parameters",
-    "section": "",
-    "text": "← Back to course\nDue: Week 3\n\nExplain the difference between directivity and gain.\nAn antenna has directivity 8 dBi and radiation efficiency 80%. Find its gain in dBi.\nComplete the link-budget exercise from Lecture 01."
-  },
-  {
-    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/lectures/lecture-01/index.html",
-    "href": "years/2026-2027/sem1/ece/intro-semiconductors/lectures/lecture-01/index.html",
-    "title": "Lecture 01 – Crystal Structure and Energy Bands",
-    "section": "",
-    "text": "← Back to course"
-  },
-  {
-    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/lectures/lecture-01/index.html#learning-objectives",
-    "href": "years/2026-2027/sem1/ece/intro-semiconductors/lectures/lecture-01/index.html#learning-objectives",
-    "title": "Lecture 01 – Crystal Structure and Energy Bands",
+    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/Tutorials/Tutorial-01/index.html#learning-objectives",
+    "href": "years/2026-2027/sem1/ece/intro-semiconductors/Tutorials/Tutorial-01/index.html#learning-objectives",
+    "title": "Tutorial 01 – Crystal Structure and Energy Bands",
     "section": "1 Learning objectives",
     "text": "1 Learning objectives\n\nDescribe the crystal structure of silicon.\nExplain how energy bands arise in a solid.\nDistinguish metals, semiconductors, and insulators by their band gap."
   },
   {
-    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/lectures/lecture-01/index.html#from-atoms-to-energy-bands",
-    "href": "years/2026-2027/sem1/ece/intro-semiconductors/lectures/lecture-01/index.html#from-atoms-to-energy-bands",
-    "title": "Lecture 01 – Crystal Structure and Energy Bands",
+    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/Tutorials/Tutorial-01/index.html#from-atoms-to-energy-bands",
+    "href": "years/2026-2027/sem1/ece/intro-semiconductors/Tutorials/Tutorial-01/index.html#from-atoms-to-energy-bands",
+    "title": "Tutorial 01 – Crystal Structure and Energy Bands",
     "section": "2 From atoms to energy bands",
     "text": "2 From atoms to energy bands\nWhen many atoms come together in a lattice, their discrete energy levels broaden into bands. The gap between the top of the valence band and the bottom of the conduction band is the band gap, \\(E_g\\).\n\nAnimation: the atomic levels of N atoms split and merge into the valence and conduction bands.\n\n\n\nMaterial\nBand gap \\(E_g\\) at 300 K\n\n\n\n\nSilicon (Si)\n1.12 eV\n\n\nGermanium (Ge)\n0.66 eV\n\n\nGallium arsenide (GaAs)\n1.42 eV"
   },
   {
-    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/lectures/lecture-01/index.html#intrinsic-carrier-concentration",
-    "href": "years/2026-2027/sem1/ece/intro-semiconductors/lectures/lecture-01/index.html#intrinsic-carrier-concentration",
-    "title": "Lecture 01 – Crystal Structure and Energy Bands",
+    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/Tutorials/Tutorial-01/index.html#intrinsic-carrier-concentration",
+    "href": "years/2026-2027/sem1/ece/intro-semiconductors/Tutorials/Tutorial-01/index.html#intrinsic-carrier-concentration",
+    "title": "Tutorial 01 – Crystal Structure and Energy Bands",
     "section": "3 Intrinsic carrier concentration",
     "text": "3 Intrinsic carrier concentration\nIn an intrinsic semiconductor, electrons and holes are generated in pairs:\n\\[\nn_i = \\sqrt{N_c N_v}\\, e^{-E_g / 2kT}\n\\]\n\n\n\nApproximate \\(n_i\\) of silicon versus temperature (constant \\(E_g = 1.12\\) eV)."
   },
   {
-    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/lectures/lecture-01/index.html#summary",
-    "href": "years/2026-2027/sem1/ece/intro-semiconductors/lectures/lecture-01/index.html#summary",
-    "title": "Lecture 01 – Crystal Structure and Energy Bands",
+    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/Tutorials/Tutorial-01/index.html#summary",
+    "href": "years/2026-2027/sem1/ece/intro-semiconductors/Tutorials/Tutorial-01/index.html#summary",
+    "title": "Tutorial 01 – Crystal Structure and Energy Bands",
     "section": "4 Summary",
     "text": "4 Summary\n\nBands form because atomic levels split when atoms are brought together.\nThe band gap \\(E_g\\) decides whether a solid behaves as a metal, semiconductor, or insulator.\n\\(n_i\\) grows exponentially with temperature.\n\n\n\n\n\n\n\nNoteExercise\n\n\n\nWhy does \\(n_i\\) rise so quickly with temperature?"
   },
   {
-    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/assignments/assignment-01/index.html",
-    "href": "years/2026-2027/sem1/ece/intro-semiconductors/assignments/assignment-01/index.html",
-    "title": "Assignment 01 – Energy Bands",
+    "objectID": "years/2026-2027/sem1/ece/antenna-design/assignments/assignment-01/index.html",
+    "href": "years/2026-2027/sem1/ece/antenna-design/assignments/assignment-01/index.html",
+    "title": "Assignment 01 – Antenna Parameters",
     "section": "",
-    "text": "← Back to course\nDue: Week 3\n\nSketch the energy-band diagram of a metal, a semiconductor, and an insulator.\nUsing the table in Lecture 01, explain why GaAs is useful for optical devices.\nEstimate how \\(n_i\\) changes for silicon between 300 K and 350 K."
-  },
-  {
-    "objectID": "years/2026-2027/sem1/ece/antenna-design/index.html",
-    "href": "years/2026-2027/sem1/ece/antenna-design/index.html",
-    "title": "Antenna Design",
-    "section": "",
-    "text": "← Back to this year’s courses"
-  },
-  {
-    "objectID": "years/2026-2027/sem1/ece/antenna-design/index.html#lectures",
-    "href": "years/2026-2027/sem1/ece/antenna-design/index.html#lectures",
-    "title": "Antenna Design",
-    "section": "1 Lectures",
-    "text": "1 Lectures\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nLecture 01 – Fundamental Antenna Parameters\n\n\nRadiation pattern, directivity, gain, and efficiency.\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "years/2026-2027/sem1/ece/antenna-design/index.html#assignments",
-    "href": "years/2026-2027/sem1/ece/antenna-design/index.html#assignments",
-    "title": "Antenna Design",
-    "section": "2 Assignments",
-    "text": "2 Assignments\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nAssignment 01 – Antenna Parameters\n\n\nDirectivity, gain, and a link-budget problem. Due: Week 3.\n\n\n\n\n\n\nNo matching items"
+    "text": "← Back to course\nDue: Week 3\n\nExplain the difference between directivity and gain.\nAn antenna has directivity 8 dBi and radiation efficiency 80%. Find its gain in dBi.\nComplete the link-budget exercise from Lecture 01."
   },
   {
     "objectID": "years/2026-2027/index.html",
@@ -161,60 +119,60 @@
     "text": "Archive\nNo archived years yet. Last year’s folder will be linked here after the next update."
   },
   {
-    "objectID": "years/2026-2027/sem1/ece/antenna-design/assignments/assignment-01/index.html",
-    "href": "years/2026-2027/sem1/ece/antenna-design/assignments/assignment-01/index.html",
-    "title": "Assignment 01 – Antenna Parameters",
-    "section": "",
-    "text": "← Back to course\nDue: Week 3\n\nExplain the difference between directivity and gain.\nAn antenna has directivity 8 dBi and radiation efficiency 80%. Find its gain in dBi.\nComplete the link-budget exercise from Lecture 01."
-  },
-  {
-    "objectID": "years/2026-2027/sem1/ece/antenna-design/lectures/lecture-01/index.html",
-    "href": "years/2026-2027/sem1/ece/antenna-design/lectures/lecture-01/index.html",
-    "title": "Lecture 01 – Fundamental Antenna Parameters",
+    "objectID": "years/2026-2027/sem1/ece/antenna-design/Tutorials/Tutorial-01/index.html",
+    "href": "years/2026-2027/sem1/ece/antenna-design/Tutorials/Tutorial-01/index.html",
+    "title": "Tutorial 01 – Fundamental Antenna Parameters",
     "section": "",
     "text": "← Back to course"
   },
   {
-    "objectID": "years/2026-2027/sem1/ece/antenna-design/lectures/lecture-01/index.html#learning-objectives",
-    "href": "years/2026-2027/sem1/ece/antenna-design/lectures/lecture-01/index.html#learning-objectives",
-    "title": "Lecture 01 – Fundamental Antenna Parameters",
+    "objectID": "years/2026-2027/sem1/ece/antenna-design/Tutorials/Tutorial-01/index.html#learning-objectives",
+    "href": "years/2026-2027/sem1/ece/antenna-design/Tutorials/Tutorial-01/index.html#learning-objectives",
+    "title": "Tutorial 01 – Fundamental Antenna Parameters",
     "section": "1 Learning objectives",
     "text": "1 Learning objectives\n\nDefine radiation pattern, beamwidth, and directivity.\nRelate gain to directivity and radiation efficiency.\nUse the Friis equation for a simple link budget."
   },
   {
-    "objectID": "years/2026-2027/sem1/ece/antenna-design/lectures/lecture-01/index.html#radiation-pattern-directivity-and-gain",
-    "href": "years/2026-2027/sem1/ece/antenna-design/lectures/lecture-01/index.html#radiation-pattern-directivity-and-gain",
-    "title": "Lecture 01 – Fundamental Antenna Parameters",
+    "objectID": "years/2026-2027/sem1/ece/antenna-design/Tutorials/Tutorial-01/index.html#radiation-pattern-directivity-and-gain",
+    "href": "years/2026-2027/sem1/ece/antenna-design/Tutorials/Tutorial-01/index.html#radiation-pattern-directivity-and-gain",
+    "title": "Tutorial 01 – Fundamental Antenna Parameters",
     "section": "2 Radiation pattern, directivity, and gain",
     "text": "2 Radiation pattern, directivity, and gain\nDirectivity is the ratio of radiation intensity in a given direction to the average radiation intensity:\n\\[\nD(\\theta,\\phi) = \\frac{4\\pi\\, U(\\theta,\\phi)}{P_{\\text{rad}}}\n\\]\nGain includes losses through the radiation efficiency \\(e_r\\):\n\\[\nG = e_r \\, D\n\\]\n\n\n\nNormalized elevation pattern of a half-wave dipole."
   },
   {
-    "objectID": "years/2026-2027/sem1/ece/antenna-design/lectures/lecture-01/index.html#friis-transmission-equation",
-    "href": "years/2026-2027/sem1/ece/antenna-design/lectures/lecture-01/index.html#friis-transmission-equation",
-    "title": "Lecture 01 – Fundamental Antenna Parameters",
+    "objectID": "years/2026-2027/sem1/ece/antenna-design/Tutorials/Tutorial-01/index.html#friis-transmission-equation",
+    "href": "years/2026-2027/sem1/ece/antenna-design/Tutorials/Tutorial-01/index.html#friis-transmission-equation",
+    "title": "Tutorial 01 – Fundamental Antenna Parameters",
     "section": "3 Friis transmission equation",
     "text": "3 Friis transmission equation\n\\[\nP_r = P_t \\, G_t \\, G_r \\left(\\frac{\\lambda}{4\\pi R}\\right)^2\n\\]\n\n\n\n\n\n\nNoteExercise\n\n\n\nA 2.4 GHz link has \\(R = 100\\) m, \\(G_t = G_r = 5\\) dBi, and \\(P_t = 20\\) dBm. Estimate \\(P_r\\)."
   },
   {
-    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/index.html",
-    "href": "years/2026-2027/sem1/ece/intro-semiconductors/index.html",
-    "title": "Introduction to Semiconductors",
+    "objectID": "years/2026-2027/sem1/ece/antenna-design/index.html",
+    "href": "years/2026-2027/sem1/ece/antenna-design/index.html",
+    "title": "Antenna Design",
     "section": "",
     "text": "← Back to this year’s courses"
   },
   {
-    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/index.html#lectures",
-    "href": "years/2026-2027/sem1/ece/intro-semiconductors/index.html#lectures",
-    "title": "Introduction to Semiconductors",
-    "section": "1 Lectures",
-    "text": "1 Lectures\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nLecture 01 – Crystal Structure and Energy Bands\n\n\nWhy solids form bands, and what separates metals, semiconductors, and insulators.\n\n\n\n\n\n\nNo matching items"
+    "objectID": "years/2026-2027/sem1/ece/antenna-design/index.html#tutorials",
+    "href": "years/2026-2027/sem1/ece/antenna-design/index.html#tutorials",
+    "title": "Antenna Design",
+    "section": "1 Tutorials",
+    "text": "1 Tutorials\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nTutorial 01 – Fundamental Antenna Parameters\n\n\nRadiation pattern, directivity, gain, and efficiency.\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/index.html#assignments",
-    "href": "years/2026-2027/sem1/ece/intro-semiconductors/index.html#assignments",
-    "title": "Introduction to Semiconductors",
+    "objectID": "years/2026-2027/sem1/ece/antenna-design/index.html#assignments",
+    "href": "years/2026-2027/sem1/ece/antenna-design/index.html#assignments",
+    "title": "Antenna Design",
     "section": "2 Assignments",
-    "text": "2 Assignments\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nAssignment 01 – Energy Bands\n\n\nBand gap and intrinsic carrier concentration. Due: Week 3.\n\n\n\n\n\n\nNo matching items"
+    "text": "2 Assignments\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nAssignment 01 – Antenna Parameters\n\n\nDirectivity, gain, and a link-budget problem. Due: Week 3.\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/assignments/assignment-01/index.html",
+    "href": "years/2026-2027/sem1/ece/intro-semiconductors/assignments/assignment-01/index.html",
+    "title": "Assignment 01 – Energy Bands",
+    "section": "",
+    "text": "← Back to course\nDue: Week 3\n\nSketch the energy-band diagram of a metal, a semiconductor, and an insulator.\nUsing the table in Lecture 01, explain why GaAs is useful for optical devices.\nEstimate how \\(n_i\\) changes for silicon between 300 K and 350 K."
   },
   {
     "objectID": "years/2026-2027/sem1/index.html",
@@ -224,66 +182,24 @@
     "text": "← All academic years\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Course\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nCourse\n\n\n\nAbout\n\n\n\nMajor · Level\n\n\n\n\n\n\n\n\nAntenna Design\n\n\nAntenna fundamentals, radiation patterns, wire and patch antennas, and arrays.\n\n\nECE, Third-Year\n\n\n\n\n\n\nIntroduction to Semiconductors\n\n\nCrystal structure, energy bands, charge carriers, and the p–n junction.\n\n\nECE, First-Year\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "years/2026-2027/sem2/ece/antenna-design/index.html",
-    "href": "years/2026-2027/sem2/ece/antenna-design/index.html",
-    "title": "Antenna Design",
+    "objectID": "years/2026-2027/sem2/ece/control-systems/index.html",
+    "href": "years/2026-2027/sem2/ece/control-systems/index.html",
+    "title": "Introduction to Control Systems",
     "section": "",
     "text": "← Back to this year’s courses"
   },
   {
-    "objectID": "years/2026-2027/sem2/ece/antenna-design/index.html#lectures",
-    "href": "years/2026-2027/sem2/ece/antenna-design/index.html#lectures",
-    "title": "Antenna Design",
-    "section": "1 Lectures",
-    "text": "1 Lectures\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nLecture 01 – Fundamental Antenna Parameters\n\n\nRadiation pattern, directivity, gain, and efficiency.\n\n\n\n\n\n\nNo matching items"
+    "objectID": "years/2026-2027/sem2/ece/control-systems/index.html#tutorials",
+    "href": "years/2026-2027/sem2/ece/control-systems/index.html#tutorials",
+    "title": "Introduction to Control Systems",
+    "section": "1 Tutorials",
+    "text": "1 Tutorials\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nLecture 01 – Bode Plots and Frequency Response\n\n\nThis lecture covers the fundamental concepts of Bode plots and frequency response in control systems. Students will learn how to analyze and interpret Bode plots, understand the relationship between frequency response and system behavior, and apply these concepts to design and analyze control systems.\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "years/2026-2027/sem2/ece/antenna-design/index.html#assignments",
-    "href": "years/2026-2027/sem2/ece/antenna-design/index.html#assignments",
-    "title": "Antenna Design",
+    "objectID": "years/2026-2027/sem2/ece/control-systems/index.html#assignments",
+    "href": "years/2026-2027/sem2/ece/control-systems/index.html#assignments",
+    "title": "Introduction to Control Systems",
     "section": "2 Assignments",
-    "text": "2 Assignments\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nAssignment 01 – Antenna Parameters\n\n\nDirectivity, gain, and a link-budget problem. Due: Week 3.\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/intro-semiconductors/assignments/assignment-01/index.html",
-    "href": "years/2026-2027/sem2/ece/intro-semiconductors/assignments/assignment-01/index.html",
-    "title": "Assignment 01 – Energy Bands",
-    "section": "",
-    "text": "← Back to course\nDue: Week 3\n\nSketch the energy-band diagram of a metal, a semiconductor, and an insulator.\nUsing the table in Lecture 01, explain why GaAs is useful for optical devices.\nEstimate how \\(n_i\\) changes for silicon between 300 K and 350 K."
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/intro-semiconductors/lectures/lecture-01/index.html",
-    "href": "years/2026-2027/sem2/ece/intro-semiconductors/lectures/lecture-01/index.html",
-    "title": "Lecture 01 – Crystal Structure and Energy Bands",
-    "section": "",
-    "text": "← Back to course"
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/intro-semiconductors/lectures/lecture-01/index.html#learning-objectives",
-    "href": "years/2026-2027/sem2/ece/intro-semiconductors/lectures/lecture-01/index.html#learning-objectives",
-    "title": "Lecture 01 – Crystal Structure and Energy Bands",
-    "section": "1 Learning objectives",
-    "text": "1 Learning objectives\n\nDescribe the crystal structure of silicon.\nExplain how energy bands arise in a solid.\nDistinguish metals, semiconductors, and insulators by their band gap."
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/intro-semiconductors/lectures/lecture-01/index.html#from-atoms-to-energy-bands",
-    "href": "years/2026-2027/sem2/ece/intro-semiconductors/lectures/lecture-01/index.html#from-atoms-to-energy-bands",
-    "title": "Lecture 01 – Crystal Structure and Energy Bands",
-    "section": "2 From atoms to energy bands",
-    "text": "2 From atoms to energy bands\nWhen many atoms come together in a lattice, their discrete energy levels broaden into bands. The gap between the top of the valence band and the bottom of the conduction band is the band gap, \\(E_g\\).\n\nAnimation: the atomic levels of N atoms split and merge into the valence and conduction bands.\n\n\n\nMaterial\nBand gap \\(E_g\\) at 300 K\n\n\n\n\nSilicon (Si)\n1.12 eV\n\n\nGermanium (Ge)\n0.66 eV\n\n\nGallium arsenide (GaAs)\n1.42 eV"
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/intro-semiconductors/lectures/lecture-01/index.html#intrinsic-carrier-concentration",
-    "href": "years/2026-2027/sem2/ece/intro-semiconductors/lectures/lecture-01/index.html#intrinsic-carrier-concentration",
-    "title": "Lecture 01 – Crystal Structure and Energy Bands",
-    "section": "3 Intrinsic carrier concentration",
-    "text": "3 Intrinsic carrier concentration\nIn an intrinsic semiconductor, electrons and holes are generated in pairs:\n\\[\nn_i = \\sqrt{N_c N_v}\\, e^{-E_g / 2kT}\n\\]\n\n\n\nApproximate \\(n_i\\) of silicon versus temperature (constant \\(E_g = 1.12\\) eV)."
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/intro-semiconductors/lectures/lecture-01/index.html#summary",
-    "href": "years/2026-2027/sem2/ece/intro-semiconductors/lectures/lecture-01/index.html#summary",
-    "title": "Lecture 01 – Crystal Structure and Energy Bands",
-    "section": "4 Summary",
-    "text": "4 Summary\n\nBands form because atomic levels split when atoms are brought together.\nThe band gap \\(E_g\\) decides whether a solid behaves as a metal, semiconductor, or insulator.\n\\(n_i\\) grows exponentially with temperature.\n\n\n\n\n\n\n\nNoteExercise\n\n\n\nWhy does \\(n_i\\) rise so quickly with temperature?"
+    "text": "2 Assignments\n\n\n\n\nTitle\nDescription\n\n\n\n\n\nNo matching items"
   }
 ]

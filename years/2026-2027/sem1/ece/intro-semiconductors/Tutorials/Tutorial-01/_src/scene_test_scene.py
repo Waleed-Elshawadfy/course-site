@@ -10,3 +10,8 @@ class SimpleTest(Scene):
         self.play(Write(t))
         self.wait()
 
+        t2 = Text('Another edit').next_to(t,DOWN)
+        self.play(Write(t2))
+        self.wait()
+
+

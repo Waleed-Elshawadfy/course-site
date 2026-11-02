@@ -98,6 +98,7 @@ figure.figure img { border: 1px solid #dee2e6; border-radius: 6px; }
   padding: 1.35rem;
   transition: all 0.2s ease;
   background: #ffffff;
+  color: #1e3a8a;
 }
 
 .year-card:hover {
@@ -120,6 +121,7 @@ figure.figure img { border: 1px solid #dee2e6; border-radius: 6px; }
   padding: 1.25rem;
   background: #ffffff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  color: #1e3a8a;
 }
 
 .course-card.non-ece {
@@ -163,6 +165,55 @@ figure.figure img { border: 1px solid #dee2e6; border-radius: 6px; }
 }
 
 /* My edits */
+
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body.hide-margin-notes .column-margin {
+  display: none !important;
+}
+
+@media screen and (max-width: 700px) {
+  div.column,
+  div.sourceCode,
+  pre.sourceCode,
+  .cell-output,
+  .cell-output-display,
+  .cell-output-stdout {
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  pre.sourceCode,
+  pre.sourceCode code,
+  .cell-output-stdout pre,
+  .cell-output-display pre {
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .cell-output-display figure,
+  .cell-output-display img,
+  .cell-output-display svg,
+  .cell-output-display canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cell-output-display figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+
 
 video {
   display: block;

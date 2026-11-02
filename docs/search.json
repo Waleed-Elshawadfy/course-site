@@ -4,21 +4,7 @@
     "href": "years/2026-2027/sem2/index.html",
     "title": "Academic Year 2026–2027",
     "section": "",
-    "text": "← All academic years\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Course\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nCourse\n\n\n\nAbout\n\n\n\nMajor · Level\n\n\n\n\n\n\n\n\nIntroduction to Control Systems\n\n\nThis course introduces the fundamental concepts of control systems, including system modeling, feedback control, stability analysis, and controller design. Students will learn to analyze and design control systems using both classical and modern techniques.\n\n\nECE, Third-Year\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/control-systems/Tutorials/Tutorial-01/index.html",
-    "href": "years/2026-2027/sem2/ece/control-systems/Tutorials/Tutorial-01/index.html",
-    "title": "Lecture 01 – Bode Plots and Frequency Response",
-    "section": "",
-    "text": "← Back to course"
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/control-systems/Tutorials/Tutorial-01/index.html#learning-objectives",
-    "href": "years/2026-2027/sem2/ece/control-systems/Tutorials/Tutorial-01/index.html#learning-objectives",
-    "title": "Lecture 01 – Bode Plots and Frequency Response",
-    "section": "1 Learning objectives",
-    "text": "1 Learning objectives\n\nWhat are Bode plots and how to construct them for different types of systems.\nHow to analyze the frequency response of a system using Bode plots.\nHow to interpret the gain and phase margins from Bode plots and their significance in control system stability.\nHow to plot Bode plots using Python and MATLAB for various transfer functions."
+    "text": "← All academic years\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\nCourse\nAbout\nMajor · Level\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "years/2026-2027/sem1/ece/intro-semiconductors/index.html",
@@ -180,26 +166,5 @@
     "title": "Academic Year 2026–2027",
     "section": "",
     "text": "← All academic years\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Course\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nCourse\n\n\n\nAbout\n\n\n\nMajor · Level\n\n\n\n\n\n\n\n\nAntenna Design\n\n\nAntenna fundamentals, radiation patterns, wire and patch antennas, and arrays.\n\n\nECE, Third-Year\n\n\n\n\n\n\nIntroduction to Semiconductors\n\n\nCrystal structure, energy bands, charge carriers, and the p–n junction.\n\n\nECE, First-Year\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/control-systems/index.html",
-    "href": "years/2026-2027/sem2/ece/control-systems/index.html",
-    "title": "Introduction to Control Systems",
-    "section": "",
-    "text": "← Back to this year’s courses"
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/control-systems/index.html#tutorials",
-    "href": "years/2026-2027/sem2/ece/control-systems/index.html#tutorials",
-    "title": "Introduction to Control Systems",
-    "section": "1 Tutorials",
-    "text": "1 Tutorials\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nLecture 01 – Bode Plots and Frequency Response\n\n\nThis lecture covers the fundamental concepts of Bode plots and frequency response in control systems. Students will learn how to analyze and interpret Bode plots, understand the relationship between frequency response and system behavior, and apply these concepts to design and analyze control systems.\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "years/2026-2027/sem2/ece/control-systems/index.html#assignments",
-    "href": "years/2026-2027/sem2/ece/control-systems/index.html#assignments",
-    "title": "Introduction to Control Systems",
-    "section": "2 Assignments",
-    "text": "2 Assignments\n\n\n\n\nTitle\nDescription\n\n\n\n\n\nNo matching items"
   }
 ]

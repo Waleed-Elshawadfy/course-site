@@ -1,9 +1,7 @@
 [
   {
     "listing": "/years/2026-2027/sem2/index.html",
-    "items": [
-      "/years/2026-2027/sem2/ece/control-systems/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/years/2026-2027/sem1/ece/intro-semiconductors/index.html",
@@ -24,12 +22,6 @@
     "items": [
       "/years/2026-2027/sem1/ece/antenna-design/index.html",
       "/years/2026-2027/sem1/ece/intro-semiconductors/index.html"
-    ]
-  },
-  {
-    "listing": "/years/2026-2027/sem2/ece/control-systems/index.html",
-    "items": [
-      "/years/2026-2027/sem2/ece/control-systems/Tutorials/Tutorial-01/index.html"
     ]
   }
 ]

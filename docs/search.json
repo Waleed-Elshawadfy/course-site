@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Course Materials",
+    "title": "Waleed Elshawadfy — TA Materials",
     "section": "",
-    "text": "TipCurrent year\n\n\n\n2026–2027 materials →"
+    "text": "Author : Waleed Elshawadfy — Teaching Assistant, ECE Department, Zagazig University\nAccess section notes, tutorials and problem sets solution."
   },
   {
     "objectID": "2026-2027/ece/intro-semiconductors/lectures/lecture-01/index.html",
@@ -59,15 +59,15 @@
     "objectID": "2026-2027/ece/antenna-design/index.html#lectures",
     "href": "2026-2027/ece/antenna-design/index.html#lectures",
     "title": "Antenna Design",
-    "section": "Lectures",
-    "text": "Lectures\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nLecture 01 – Fundamental Antenna Parameters\n\n\nRadiation pattern, directivity, gain, and efficiency.\n\n\n\n\n\n\nNo matching items"
+    "section": "1 Lectures",
+    "text": "1 Lectures\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nLecture 01 – Fundamental Antenna Parameters\n\n\nRadiation pattern, directivity, gain, and efficiency.\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "2026-2027/ece/antenna-design/index.html#assignments",
     "href": "2026-2027/ece/antenna-design/index.html#assignments",
     "title": "Antenna Design",
-    "section": "Assignments",
-    "text": "Assignments\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nAssignment 01 – Antenna Parameters\n\n\nDirectivity, gain, and a link-budget problem. Due: Week 3.\n\n\n\n\n\n\nNo matching items"
+    "section": "2 Assignments",
+    "text": "2 Assignments\n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nAssignment 01 – Antenna Parameters\n\n\nDirectivity, gain, and a link-budget problem. Due: Week 3.\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "2026-2027/ece/antenna-design/assignments/assignment-01/index.html",
@@ -130,14 +130,14 @@
     "href": "2026-2027/index.html",
     "title": "Academic Year 2026–2027",
     "section": "",
-    "text": "← All academic years\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Course\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nCourse\n\n\n\nAbout\n\n\n\nMajor · Level\n\n\n\n\n\n\n\n\nAntenna Design\n\n\nAntenna fundamentals, radiation patterns, wire and patch antennas, and arrays.\n\n\nECE, Third-Year\n\n\n\n\n\n\nIntroduction to Semiconductors\n\n\nCrystal structure, energy bands, charge carriers, and the p–n junction.\n\n\nECE, First-Year\n\n\n\n\n\n\nNo matching items"
+    "text": "← All academic years\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Course\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nCourse\n\n\n\nAbout\n\n\n\nMajor · Level\n\n\n\n\n\n\n\n\nAntenna Design\n\n\nAntenna fundamentals, radiation patterns, wire and patch antennas, and arrays.\n\n\nECE, Third-Year\n\n\n\n\n\n\nIntroduction to Semiconductors\n\n\nCrystal structure, energy bands, charge carriers, and the p–n junction.\n\n\nECE, First-Year\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#previous-years",
     "href": "index.html#previous-years",
     "title": "Course Materials",
-    "section": "Previous years",
-    "text": "Previous years\n2025–2026 materials"
+    "section": "1 Previous years",
+    "text": "1 Previous years\n2025–2026 materials"
   },
   {
     "objectID": "2025-2026/ece/intro-semiconductors/lectures/lecture-01/index.html",
@@ -264,5 +264,19 @@
     "title": "Academic Year 2026–2027",
     "section": "",
     "text": "← All academic years\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Course\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nCourse\n\n\n\nAbout\n\n\n\nMajor · Level\n\n\n\n\n\n\n\n\nAntenna Design\n\n\nAntenna fundamentals, radiation patterns, wire and patch antennas, and arrays.\n\n\nECE, Third-Year\n\n\n\n\n\n\nIntroduction to Semiconductors\n\n\nCrystal structure, energy bands, charge carriers, and the p–n junction.\n\n\nECE, First-Year\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#select-your-academic-year",
+    "href": "index.html#select-your-academic-year",
+    "title": "Waleed Elshawadfy — TA Materials",
+    "section": "Select Your Academic Year",
+    "text": "Select Your Academic Year\nBecause teaching assignments change each academic year, start by choosing your academic year below. All previous years remain permanently archived for reference and exam preparation.\n\n\n🟢 2026–2027 (Current Year)\nEnter 2026–2027 Courses →\n\n\nArchive\nNo archived years yet. Last year’s folder will be linked here after the next update."
+  },
+  {
+    "objectID": "index.html#archive",
+    "href": "index.html#archive",
+    "title": "Waleed Elshawadfy — TA Materials",
+    "section": "Archive",
+    "text": "Archive\nNo archived years yet. Last year’s folder will be linked here after the next update."
   }
 ]

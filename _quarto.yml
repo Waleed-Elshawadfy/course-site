@@ -6,17 +6,35 @@ project:
     - "!README.md"
 
 website:
-  title: "Course Materials"
+  title: "Waleed Elshawadfy | TA Portal"
+  description: "Teaching Assistant Course Materials — Zagazig University (ECE)"
+  site-url: "https://github.com/Waleed-Elshawadfy/course-site.git"
+
   navbar:
+    background: primary
+    search : true
     left:
       - text: "Home"
         href: index.qmd
+    right:
+      - icon: github
+        href: https://github.com/Waleed-Elshawadfy/course-site.git
+        aria-label: GitHub
   page-footer:
-    center: "© Waleed Elshawadfy · Zagazig University "
+    left: "© 2026  Waleed Elshawadfy — Dept. of Electronics & Communications Engineering, Zagazig University"
+    right: "Gmail : waleedalshawadfy@gmail.com<br>Phone: 01558849599"
 
 format:
   html:
-    theme: flatly
+    theme:
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
-    toc-title: "On this page"
+    toc-depth: 3
+    code-copy: true
+    code-fold: show
+    code-tools: true
+    number-sections: true
+
+

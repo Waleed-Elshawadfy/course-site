@@ -1,19 +1,44 @@
 ---
-title: "Course Materials"
-subtitle: "Waleed Elshawadfy · Zagazig University "
+title: "Waleed Elshawadfy — TA Materials"
+subtitle: "Department of Electronics & Communications Engineering (ECE) | Zagazig University"
+page-layout: full
 toc: false
-
+format:
+  html:
+    number-sections: false
 ---
 
-::: {.callout-tip appearance="simple"}
-## Current year
-[**2026–2027 materials →**](2026-2027/index.qmd)
+::: {.hero-banner}
+# Welcome to My Academic Course Portal
+
+**Author :** Waleed Elshawadfy — Teaching Assistant, ECE Department, Zagazig University  
+Access section notes, tutorials and problem sets solution.  
+
 :::
 
-## Previous years
+## Select Your Academic Year
 
-[**2025–2026 materials **](2025-2026/index.qmd)
-<!-- *No archived years yet. Last year's folder will be linked here after the next update.* -->
+Because teaching assignments change each academic year, start by choosing your academic year below. All previous years remain permanently archived for reference and exam preparation.
+
+::: {.year-selector-grid}
+
+::: {.year-card}
+### 🟢 2026–2027 (Current Year)
+
+[Enter 2026–2027 Courses →](2026-2027/index.qmd){.btn .btn-primary}
+:::
+
+::: {.year-card}
+## Archive
+
+*No archived years yet. Last year's folder will be linked here after the next update.*
+
+:::
+
+:::
+
+
+
 
 
 

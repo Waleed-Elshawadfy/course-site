@@ -9,3 +9,156 @@ video { max-width: 100%; height: auto; border-radius: 6px; }
 
 /* Figures */
 figure.figure img { border: 1px solid #dee2e6; border-radius: 6px; }
+
+
+
+/* Custom Academic Portal Styling — Eng. Waleed Elshawadfy (Zagazig University) */
+:root {
+  --zu-primary: #1e3a8a;
+  --zu-accent: #0284c7;
+  --zu-ece-bg: #dbeafe;
+  --zu-ece-text: #1e40af;
+  --zu-nonece-bg: #fef3c7;
+  --zu-nonece-text: #92400e;
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+}
+
+.hero-banner h1 {
+  color: #ffffff;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.year-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.year-card {
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1.35rem;
+  transition: all 0.2s ease;
+  background: #ffffff;
+}
+
+.year-card:hover {
+  border-color: var(--zu-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.12);
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 2rem 0;
+}
+
+.course-card {
+  border: 1px solid #e2e8f0;
+  border-left: 5px solid var(--zu-primary);
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.course-card.non-ece {
+  border-left-color: #d97706;
+}
+
+.badge-ece {
+  background-color: var(--zu-ece-bg);
+  color: var(--zu-ece-text);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.badge-nonece {
+  background-color: var(--zu-nonece-bg);
+  color: var(--zu-nonece-text);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.badge-grade {
+  background-color: #f1f5f9;
+  color: #334155;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.manim-container {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+  background: #0f172a;
+  padding: 0.5rem;
+  margin: 1.25rem 0;
+}
+
+/* My edits */
+
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body.hide-margin-notes .column-margin {
+  display: none !important;
+}
+
+@media screen and (max-width: 700px) {
+  div.column,
+  div.sourceCode,
+  pre.sourceCode,
+  .cell-output,
+  .cell-output-display,
+  .cell-output-stdout {
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  pre.sourceCode,
+  pre.sourceCode code,
+  .cell-output-stdout pre,
+  .cell-output-display pre {
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .cell-output-display figure,
+  .cell-output-display img,
+  .cell-output-display svg,
+  .cell-output-display canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cell-output-display figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+

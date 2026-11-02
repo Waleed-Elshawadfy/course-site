@@ -19,6 +19,6 @@ listing:
   filter-ui: true
 ---
 
-[← All academic years](../index.qmd)
+[← Current Year Semesters](../index.qmd)
 
 

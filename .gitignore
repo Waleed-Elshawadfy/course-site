@@ -5,3 +5,8 @@
 __pycache__/
 
 **/*.quarto_ipynb
+# *.pdf
+# *.xopp
+
+# Ignore third-party study materials
+references/

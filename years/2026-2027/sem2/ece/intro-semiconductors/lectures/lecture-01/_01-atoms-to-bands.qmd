@@ -1,0 +1,13 @@
+## From atoms to energy bands
+
+When many atoms come together in a lattice, their discrete energy levels broaden into bands. The gap between the top of the valence band and the bottom of the conduction band is the **band gap**, $E_g$.
+
+{{< video assets/BandFormation.mp4 >}}
+
+*Animation: the atomic levels of N atoms split and merge into the valence and conduction bands.*
+
+| Material | Band gap $E_g$ at 300 K |
+|----------|-------------------------|
+| Silicon (Si) | 1.12 eV |
+| Germanium (Ge) | 0.66 eV |
+| Gallium arsenide (GaAs) | 1.42 eV |

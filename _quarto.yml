@@ -20,9 +20,14 @@ website:
       - icon: github
         href: https://github.com/Waleed-Elshawadfy/course-site.git
         aria-label: GitHub
+      - icon: envelope-fill
+        href: https://mail.google.com/mail/?view=cm&fs=1&to=waleedalshawadfy@gmail.com
+        aria-label: Email
+      - icon: whatsapp
+        href: https://wa.me/201558849599
+        aria-label: WhatsApp
   page-footer:
     left: "© 2026  Waleed Elshawadfy — Dept. of Electronics & Communications Engineering, Zagazig University"
-    right: "Gmail : waleedalshawadfy@gmail.com<br>Phone: 01558849599"
 
 format:
   html:
@@ -36,5 +41,3 @@ format:
     code-fold: show
     code-tools: true
     number-sections: true
-
-

@@ -1,0 +1,18 @@
+---
+title: "Lecture 01 – Crystal Structure and Energy Bands"
+description: "Why solids form bands, and what separates metals, semiconductors, and insulators."
+---
+
+[← Back to course](../../index.qmd)
+
+## Learning objectives
+
+- Describe the crystal structure of silicon.
+- Explain how energy bands arise in a solid.
+- Distinguish metals, semiconductors, and insulators by their band gap.
+
+{{< include _01-atoms-to-bands.qmd >}}
+
+{{< include _02-intrinsic-carriers.qmd >}}
+
+{{< include _03-summary.qmd >}}

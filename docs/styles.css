@@ -37,6 +37,54 @@ figure.figure img { border: 1px solid #dee2e6; border-radius: 6px; }
   font-weight: 700;
 }
 
+.navbar a.nav-link[href*="github.com/Waleed-Elshawadfy/course-site"],
+.navbar a.nav-link[href*="to=waleedalshawadfy"],
+.navbar a.nav-link[href*="wa.me/201558849599"] {
+  position: relative;
+}
+
+.navbar a.nav-link[href*="github.com/Waleed-Elshawadfy/course-site"]::after,
+.navbar a.nav-link[href*="to=waleedalshawadfy"]::after,
+.navbar a.nav-link[href*="wa.me/201558849599"]::after {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  z-index: 1000;
+  padding: 0.4rem 0.65rem;
+  border-radius: 0.35rem;
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+  font-size: 0.875rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease;
+  pointer-events: none;
+}
+
+.navbar a.nav-link[href*="github.com/Waleed-Elshawadfy/course-site"]::after {
+  content: "Waleed-Elshawadfy/course-site";
+}
+
+.navbar a.nav-link[href*="to=waleedalshawadfy"]::after {
+  content: "waleedalshawadfy@gmail.com";
+}
+
+.navbar a.nav-link[href*="wa.me/201558849599"]::after {
+  content: "0 155 884 9599";
+}
+
+.navbar a.nav-link[href*="github.com/Waleed-Elshawadfy/course-site"]:hover::after,
+.navbar a.nav-link[href*="github.com/Waleed-Elshawadfy/course-site"]:focus-visible::after,
+.navbar a.nav-link[href*="to=waleedalshawadfy"]:hover::after,
+.navbar a.nav-link[href*="to=waleedalshawadfy"]:focus-visible::after,
+.navbar a.nav-link[href*="wa.me/201558849599"]:hover::after,
+.navbar a.nav-link[href*="wa.me/201558849599"]:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 .year-selector-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -161,4 +209,3 @@ body.hide-margin-notes .column-margin {
     margin-right: 0;
   }
 }
-

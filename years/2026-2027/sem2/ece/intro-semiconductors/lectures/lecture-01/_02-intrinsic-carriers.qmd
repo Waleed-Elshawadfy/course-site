@@ -1,0 +1,9 @@
+## Intrinsic carrier concentration
+
+In an intrinsic semiconductor, electrons and holes are generated in pairs:
+
+$$
+n_i = \sqrt{N_c N_v}\, e^{-E_g / 2kT}
+$$
+
+![Approximate $n_i$ of silicon versus temperature (constant $E_g = 1.12$ eV).](assets/ni-vs-temperature.png){fig-alt="Semilog plot showing intrinsic carrier concentration of silicon rising steeply with temperature." width="80%"}

@@ -1,0 +1,12 @@
+---
+title: "Assignment 01 – Energy Bands"
+description: "Band gap and intrinsic carrier concentration. Due: Week 3."
+---
+
+[← Back to course](../../index.qmd)
+
+**Due:** Week 3
+
+1. Sketch the energy-band diagram of a metal, a semiconductor, and an insulator.
+2. Using the table in Lecture 01, explain why GaAs is useful for optical devices.
+3. Estimate how $n_i$ changes for silicon between 300 K and 350 K.

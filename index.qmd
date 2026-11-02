@@ -25,7 +25,7 @@ Because teaching assignments change each academic year, start by choosing your a
 ::: {.year-card}
 ### 🟢 2026–2027 (Current Year)
 
-[Enter 2026–2027 Courses →](2026-2027/index.qmd){.btn .btn-primary}
+[Enter 2026–2027 Courses →](years/2026-2027/index.qmd){.btn .btn-primary}
 :::
 
 ::: {.year-card}

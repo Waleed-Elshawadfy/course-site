@@ -1,0 +1,10 @@
+## Friis transmission equation
+
+$$
+P_r = P_t \, G_t \, G_r \left(\frac{\lambda}{4\pi R}\right)^2
+$$
+
+::: {.callout-note}
+## Exercise
+A 2.4 GHz link has $R = 100$ m, $G_t = G_r = 5$ dBi, and $P_t = 20$ dBm. Estimate $P_r$.
+:::

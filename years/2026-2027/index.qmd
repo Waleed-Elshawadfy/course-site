@@ -1,0 +1,35 @@
+---
+title: "Waleed Elshawadfy — TA Materials"
+subtitle: "Department of Electronics & Communications Engineering (ECE) | Zagazig University"
+page-layout: full
+toc: false
+format:
+  html:
+    number-sections: false
+---
+
+
+## Select Your Academic Year Semester.
+
+
+::: {.year-selector-grid}
+
+::: {.year-card}
+### First Semester (2026–2027)  
+
+[Enter First Semester Courses →](sem1/index.qmd){.btn .btn-primary}
+:::
+
+::: {.year-card}
+###  Second Semester (2026–2027) 
+
+[Enter Second Semester Courses →](sem2/index.qmd){.btn .btn-primary}
+:::
+
+
+:::
+
+
+
+
+

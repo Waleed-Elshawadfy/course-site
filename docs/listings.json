@@ -18,10 +18,18 @@
     ]
   },
   {
+    "listing": "/years/2026-2027/sem1/ece/enb1103-mechanics-1/index.html",
+    "items": [
+      "/years/2026-2027/sem1/ece/enb1103-mechanics-1/Tutorials/Tutorial-01/index.html",
+      "/years/2026-2027/sem1/ece/enb1103-mechanics-1/assignments/assignment-01/index.html"
+    ]
+  },
+  {
     "listing": "/years/2026-2027/sem1/index.html",
     "items": [
       "/years/2026-2027/sem1/ece/antenna-design/index.html",
-      "/years/2026-2027/sem1/ece/intro-semiconductors/index.html"
+      "/years/2026-2027/sem1/ece/intro-semiconductors/index.html",
+      "/years/2026-2027/sem1/ece/enb1103-mechanics-1/index.html"
     ]
   }
 ]

@@ -1,0 +1,34 @@
+---
+title: "Mechanics 1"
+description: "This course introduces the fundamental concepts of mechanics, including kinematics, dynamics, and statics. Students will learn to analyze the motion of particles and rigid bodies, apply Newton's laws, and solve problems related to forces and energy."
+categories: [ECE, Third-Year]
+kind: course
+toc: false
+listing:
+  - id: Tutorials
+    contents: "Tutorials/*/index.qmd"
+    type: table
+    fields: [title, description]
+    sort: "title"
+    sort-ui: false
+    filter-ui: false
+  - id: assignments
+    contents: "assignments/*/index.qmd"
+    type: table
+    fields: [title, description]
+    sort: "title"
+    sort-ui: false
+    filter-ui: false
+---
+
+[← Back to this semester's courses](../../index.qmd)
+
+## Tutorials
+
+::: {#Tutorials}
+:::
+
+## Assignments
+
+::: {#assignments}
+:::

@@ -1,0 +1,254 @@
+---
+title: "Tutorial 01: 3D Cartesian Vectors & Position Vectors"
+description: "Fundamental concepts, 2D vs. 3D rectangular components, direction cosines, unit vectors, position vectors, and worked problems."
+date: 2026-11-04
+format:
+  html:
+    toc: true
+    number-sections: true
+---
+
+## Fundamental Quantities of Mechanics
+
+Engineering mechanics relies on four basic quantities[cite: 5]:
+
+* **Length:** Used to locate the position of a point in space and describe the size of a physical system; once a standard unit of length is defined, distances and geometric properties of a body are expressed as multiples of this unit[cite: 5].
+* **Time:** Conceived as a succession of events; while the principles of statics are time-independent, time plays an important role in dynamics[cite: 5].
+* **Mass:** A measure of a quantity of matter used to compare the action of one body with another; it manifests as gravitational attraction between two bodies and measures the resistance of matter to a change in velocity[cite: 6].
+* **Force:** Considered as a "push" or "pull" exerted by one body on another, occurring either through direct contact (such as pushing on a wall) or through a distance when physically separated (such as gravitational, electrical, and magnetic forces)[cite: 6]. A force is completely characterized by its **magnitude**, **direction**, and **point of application**[cite: 6].
+
+---
+
+## From 2D to 3D Rectangular Components
+
+### 2D Review vs. 3D Extension
+
+In two dimensions, a vector $\mathbf{A}$ making an angle $\theta$ with the positive $x$-axis is resolved into rectangular components using simple right-triangle trigonometry[cite: 24]:
+
+$$A_x = A \cos\theta, \quad A_y = A \sin\theta$$
+
+$$\vert{}\mathbf{A}\vert{} = \sqrt{A_x^2 + A_y^2}, \quad \angle\theta = \tan^{-1}\!\left(\frac{A_y}{A_x}\right)$$
+
+In three dimensions, vector algebra operations are greatly simplified by expressing vectors in **Cartesian vector form**[cite: 7].
+
+### Right-Handed Coordinate System
+
+We use a **right-handed coordinate system** where the positive $z$-axis is directed upward (the zenith direction) to measure height or altitude, while the $x$ and $y$ axes lie in the horizontal plane[cite: 7, 11]. A rectangular coordinate system is right-handed if the thumb of the right hand points in the direction of the positive $z$-axis when the right-hand fingers are curled about this axis from the positive $x$-axis toward the positive $y$-axis[cite: 7, 24].
+
+::: {.callout-warning}
+### Watch Your Axis Orientation!
+Swapping the positive $x$ and $y$ axes so that curling your fingers from $+x$ to $+y$ points your thumb downward creates a left-handed coordinate system, which is **wrong** for our vector formulations[cite: 24]. Always verify your axes using the right-hand rule before reading coordinates[cite: 7, 24].
+:::
+
+### Rectangular & Cartesian Vector Representation
+
+When a vector $\mathbf{A}$ is directed within an octant of the $x, y, z$ frame, two successive applications of the parallelogram law resolve the vector first into $\mathbf{A} = \mathbf{A}' + \mathbf{A}_z$ (where $\mathbf{A}'$ is the projection in the $xy$-plane) and then $\mathbf{A}' = \mathbf{A}_x + \mathbf{A}_y$, yielding the vector sum[cite: 7, 24]:
+
+$$\mathbf{A} = \mathbf{A}_x + \mathbf{A}_y + \mathbf{A}_z$$
+
+::: {.callout-important}
+### TA Note: Separate Magnitude and Direction
+Writing $A = A_x + A_y + A_z$ as a scalar sum is **not accurate** because each component has both a magnitude and a distinct axis direction[cite: 24]. Using the Cartesian unit vectors $\mathbf{i}, \mathbf{j}, \mathbf{k}$ along the positive $x, y, z$ axes separates the scalar magnitude ($A_x, A_y, A_z$) from the direction ($\mathbf{i}, \mathbf{j}, \mathbf{k}$)[cite: 8, 24]:
+
+$$\mathbf{A} = A_x\mathbf{i} + A_y\mathbf{j} + A_z\mathbf{k}$$
+:::
+
+### Magnitude of a Cartesian Vector
+
+From the two right triangles formed by the 3D parallelepiped, $A = \sqrt{A'^2 + A_z^2}$ and $A' = \sqrt{A_x^2 + A_y^2}$[cite: 8]. Combining these equations to eliminate $A'$ gives the magnitude of $\mathbf{A}$ as the positive square root of the sum of the squares of its components[cite: 8, 24]:
+
+$$\vert{}\mathbf{A}\vert{} = A = \sqrt{A_x^2 + A_y^2 + A_z^2}$$
+
+---
+
+## Direction Cosines & Unit Vectors
+
+### Coordinate Direction Angles ($\alpha, \beta, \gamma$)
+
+The direction of a Cartesian vector $\mathbf{A}$ is defined by the **coordinate direction angles** $\alpha$ (alpha), $\beta$ (beta), and $\gamma$ (gamma)—also abbreviated as $\theta_x = \alpha$, $\theta_y = \beta$, and $\theta_z = \gamma$—measured between the tail of $\mathbf{A}$ and the positive $x, y, z$ axes located at the tail of $\mathbf{A}$[cite: 9, 25]. Regardless of where $\mathbf{A}$ is directed, each angle lies between $0^\circ$ and $180^\circ$[cite: 9].
+
+Projecting $\mathbf{A}$ onto the $x, y, z$ axes forms three right triangles that define the **direction cosines** of $\mathbf{A}$[cite: 9, 25]:
+
+$$\cos\alpha = \frac{A_x}{\vert{}\mathbf{A}\vert{}}, \quad \cos\beta = \frac{A_y}{\vert{}\mathbf{A}\vert{}}, \quad \cos\gamma = \frac{A_z}{\vert{}\mathbf{A}\vert{}}$$
+
+Note also that if the angle $\gamma$ with the $z$-axis is given, the intermediate projection onto the $xy$-plane has magnitude $A' = A\sin\gamma$[cite: 25].
+
+### Unit Vector ($\mathbf{u}_A$) and Direction Cosine Identity
+
+Dividing $\mathbf{A}$ by its magnitude $\vert{}\mathbf{A}\vert{}$ produces a dimensionless **unit vector** $\mathbf{u}_A$ of magnitude $1$ pointing in the direction of $\mathbf{A}$[cite: 10, 25]:
+
+$$\mathbf{u}_A = \frac{\mathbf{A}}{\vert{}\mathbf{A}\vert{}} = \frac{A_x}{\vert{}\mathbf{A}\vert{}}\mathbf{i} + \frac{A_y}{\vert{}\mathbf{A}\vert{}}\mathbf{j} + \frac{A_z}{\vert{}\mathbf{A}\vert{}}\mathbf{k} = \cos\alpha\,\mathbf{i} + \cos\beta\,\mathbf{j} + \cos\gamma\,\mathbf{k}$$
+
+Because the magnitude of $\mathbf{u}_A$ is equal to $1$, the sum of the squares of the direction cosines satisfies the fundamental identity[cite: 10, 25]:
+
+$$\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$$
+
+If any two of the coordinate direction angles are known, the third angle can be found using this equation[cite: 10]. Furthermore, if the magnitude and coordinate direction angles of $\mathbf{A}$ are known, $\mathbf{A}$ is expressed in Cartesian vector form as[cite: 10, 25]:
+
+$$\mathbf{A} = \vert{}\mathbf{A}\vert{}\cdot\mathbf{u}_A = A\cos\alpha\,\mathbf{i} + A\cos\beta\,\mathbf{j} + A\cos\gamma\,\mathbf{k}$$
+
+---
+
+## Position Vectors & Force Along a Line
+
+A **position vector** $\mathbf{r}$ is a fixed vector that locates a point in space relative to another point[cite: 11, 25]:
+
+1. **From the Origin ($O$ to $P$):** If $\mathbf{r}$ extends from the origin of coordinates $O(0,0,0)$ to a point $P(x, y, z)$, then[cite: 11, 25]:
+   $$\mathbf{r} = P - O = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}$$
+   For example, starting at $O$, measuring $x_A = +4\text{ m}$, $y_A = +2\text{ m}$, and $z_A = -6\text{ m}$ locates $A(4\text{ m}, 2\text{ m}, -6\text{ m})$, while $B(6\text{ m}, -1\text{ m}, 4\text{ m})$ is located at $x_B = +6\text{ m}$, $y_B = -1\text{ m}$, and $z_B = +4\text{ m}$[cite: 11].
+2. **Between Two Points ($A$ to $B$):** For a position vector directed from an initial point $A(x_A, y_A, z_A)$ to a terminal point $B(x_B, y_B, z_B)$ (or from $P$ to $Q$), head-to-tail triangle addition requires $\mathbf{r}_A + \mathbf{r}_{AB} = \mathbf{r}_B$, giving the difference between the two points ("destination minus origin")[cite: 12, 25]:
+   $$\mathbf{r}_{AB} = \mathbf{r}_B - \mathbf{r}_A = (x_B - x_A)\mathbf{i} + (y_B - y_A)\mathbf{j} + (z_B - z_A)\mathbf{k}$$
+
+To express a force $\mathbf{F}$ of known magnitude $F$ directed along a cable or line from $A$ to $B$, multiply the scalar magnitude $F$ by the unit vector $\mathbf{u}_{AB} = \frac{\mathbf{r}_{AB}}{\vert{}\mathbf{r}_{AB}\vert{}}$[cite: 13, 14].
+
+---
+
+## Worked Lecture Examples
+
+### Example 1: Force Directed Along a Cable
+
+**Problem:** A cable attached to an eyebolt at $A(4\text{ m}, 0, 3\text{ m})$ is pulled toward point $B(0, 6\text{ m}, 0)$ with a force $\mathbf{F}$ of magnitude $500\text{ N}$[cite: 13]. Determine the rectangular representation of this force[cite: 13].
+
+**Solution:**
+
+1. **Write the position vector $\vec{AB}$ from $A$ to $B$ in rectangular form:** Avoid common errors (choosing the wrong signs or mixing up scalar components) by sketching the parallelepiped from $A$ to $B$[cite: 13]:
+   $$\vec{AB} = -4\mathbf{i} + 6\mathbf{j} - 3\mathbf{k}\text{ m}$$
+[cite: 13]
+2. **Evaluate the unit vector $\boldsymbol{\lambda} = \mathbf{u}_{AB}$ from $A$ toward $B$:**
+   $$\mathbf{u}_{AB} = \boldsymbol{\lambda} = \frac{\vec{AB}}{\vert{}\vec{AB}\vert{}} = \frac{-4\mathbf{i} + 6\mathbf{j} - 3\mathbf{k}}{\sqrt{(-4)^2 + 6^2 + (-3)^2}} = -0.5122\mathbf{i} + 0.7682\mathbf{j} - 0.3841\mathbf{k}$$
+[cite: 14]
+3. **Multiply by the magnitude of the force ($F = 500\text{ N}$):**
+   $$\mathbf{F} = F\boldsymbol{\lambda} = 500(-0.5122\mathbf{i} + 0.7682\mathbf{j} - 0.3841\mathbf{k}) = \{-256\mathbf{i} + 384\mathbf{j} - 192\mathbf{k}\}\text{ N}$$
+[cite: 14]
+
+---
+
+### Example 2: Force from Coordinate Direction Angles
+
+**Problem:** Express the force $F = 200\text{ N}$ acting in the first octant with $\beta = 60^\circ$ and $\gamma = 45^\circ$ as a Cartesian vector[cite: 15].
+
+**Solution:**
+
+1. **Find the unknown coordinate direction angle $\alpha$:** Using the direction cosine identity[cite: 15]:
+   $$\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1 \implies \cos^2\alpha + \cos^2 60^\circ + \cos^2 45^\circ = 1$$
+[cite: 15]
+   *(Note: The lecture slide contains a typographical error printing $\cos^2 0^\circ$ and $(0)^2$ in the intermediate substitution line instead of $\cos^2 60^\circ = (0.5)^2$, though its final root $\pm 0.5$ is based on $\beta = 60^\circ$[cite: 15].)*
+   $$\cos\alpha = \sqrt{1 - (0.5)^2 - (0.707)^2} = \pm 0.5 \implies \alpha = \cos^{-1}(0.5) = 60^\circ \text{ or } \cos^{-1}(-0.5) = 120^\circ$$
+[cite: 15]
+   Because the force vector points in the positive $x$ direction, we select $\alpha = 60^\circ$[cite: 15].
+2. **Express $\mathbf{F}$ in Cartesian vector form:**
+   $$\mathbf{F} = F\cos\alpha\,\mathbf{i} + F\cos\beta\,\mathbf{j} + F\cos\gamma\,\mathbf{k}$$
+[cite: 15]
+   $$\mathbf{F} = (200\cos 60^\circ\text{ N})\mathbf{i} + (200\cos 60^\circ\text{ N})\mathbf{j} + (200\cos 45^\circ\text{ N})\mathbf{k} = \{100.0\mathbf{i} + 100.0\mathbf{j} + 141.4\mathbf{k}\}\text{ N}$$
+[cite: 15]
+
+---
+
+### Example 3: Double-Projection Resolution ($A_{xy}$ Method)
+
+**Problem:** For the position vector $\mathbf{A}$ of magnitude $A = 12\text{ m}$ making an angle of $30^\circ$ with the positive $z$-axis and whose projection in the $xy$-plane makes an angle of $40^\circ$ with the positive $x$-axis toward the positive $y$-axis, determine (1) the rectangular representation of $\mathbf{A}$ and (2) the angles between $\mathbf{A}$ and each of the positive coordinate axes[cite: 16].
+
+**Solution:**
+
+1. **Resolve $\mathbf{A}$ into vertical ($A_z$) and horizontal ($A_{xy}$) components, then resolve $A_{xy}$ into $A_x$ and $A_y$:**
+   $$A_z = A\cos 30^\circ = 12\cos 30^\circ = 10.392\text{ m}$$
+[cite: 16]
+   $$A_{xy} = A\sin 30^\circ = 12\sin 30^\circ = 6\text{ m}$$
+[cite: 16, 25]
+   $$A_x = A_{xy}\cos 40^\circ = 6\cos 40^\circ = 4.596\text{ m}$$
+[cite: 16]
+   $$A_y = A_{xy}\sin 40^\circ = 6\sin 40^\circ = 3.857\text{ m}$$
+[cite: 16]
+   $$\mathbf{A} = A_x\mathbf{i} + A_y\mathbf{j} + A_z\mathbf{k} = \{4.60\mathbf{i} + 3.86\mathbf{j} + 10.39\mathbf{k}\}\text{ m}$$
+[cite: 16]
+2. **Calculate the coordinate direction angles ($\theta_x, \theta_y, \theta_z$):**
+   $$\theta_x = \cos^{-1}\!\left(\frac{A_x}{A}\right) = \cos^{-1}\!\left(\frac{4.596}{12}\right) = 67.5^\circ$$
+[cite: 16]
+   $$\theta_y = \cos^{-1}\!\left(\frac{A_y}{A}\right) = \cos^{-1}\!\left(\frac{3.857}{12}\right) = 71.3^\circ$$
+[cite: 16]
+   $$\theta_z = \cos^{-1}\!\left(\frac{A_z}{A}\right) = \cos^{-1}\!\left(\frac{10.392}{12}\right) = 30.0^\circ$$
+[cite: 16]
+
+---
+
+### Example 4: Obtuse Coordinate Direction Angles
+
+**Problem:** Express the force $F = 500\text{ N}$ (directed in the $+x, -y, -z$ octant, making $45^\circ$ with the negative $y$-axis and $60^\circ$ with the negative $z$-axis) as a Cartesian vector[cite: 17].
+
+**Solution:**
+
+1. **Determine the coordinate direction angles from the positive axes:** Since the vector makes $45^\circ$ with $-y$ and $60^\circ$ with $-z$, the supplementary angles measured from the positive $y$ and $z$ axes are $\beta = 180^\circ - 45^\circ = 135^\circ$ and $\gamma = 180^\circ - 60^\circ = 120^\circ$[cite: 17].
+   $$\cos^2\alpha + \cos^2 135^\circ + \cos^2 120^\circ = 1 \implies \alpha = 60^\circ$$
+[cite: 17]
+2. **Write the Cartesian vector:**
+   $$\mathbf{F} = F\mathbf{u}_F = (500\text{ N})(0.5\mathbf{i} - 0.7071\mathbf{j} - 0.5\mathbf{k}) = \{250\mathbf{i} - 354\mathbf{j} - 250\mathbf{k}\}\text{ N}$$
+[cite: 17]
+
+---
+
+## Guided Tutorial Practice Problems (Problems 1–4)
+
+### Problem 1
+**Statement:** Obtain the rectangular representation of the force $\mathbf{P}$, given that its magnitude is $30\text{ N}$, it is inclined at $50^\circ$ above its projection in the $xy$-plane, and its $xy$-plane projection makes an angle of $30^\circ$ with the $+y$ axis toward the $-x$ axis[cite: 18].
+
+**Solution:**
+
+* Project $\mathbf{P}$ onto the $z$-axis and the $xy$-plane:
+  $$P_z = 30\sin 50^\circ = 22.98\text{ N} \approx 23\text{ N}$$
+[cite: 18]
+  $$P_{xy} = 30\cos 50^\circ = 19.28\text{ N}$$
+* Resolve $P_{xy}$ along the $-x$ and $+y$ axes:
+  $$P_x = -P_{xy}\sin 30^\circ = -19.28(0.5) = -9.64\text{ N}$$
+  $$P_y = P_{xy}\cos 30^\circ = 19.28(0.8660) = 16.70\text{ N}$$
+  $$\mathbf{P} = \{-9.64\mathbf{i} + 16.70\mathbf{j} + 22.98\mathbf{k}\}\text{ N}$$
+
+::: {.callout-note}
+### TA Caution on Slide Annotations
+The handwritten annotation on the lecture slide lists $P_x = -15$, $P_y = 15\sqrt{3}$, and $P_z = 23$[cite: 18]. Notice that $-15 = -30\sin 30^\circ$ and $15\sqrt{3} = 30\cos 30^\circ$, which resolves the full $30\text{ N}$ magnitude directly in the $xy$-plane without first multiplying by $\cos 50^\circ$! Always project onto the $xy$-plane ($P_{xy} = P\cos 50^\circ$) before resolving into $x$ and $y$ components.
+:::
+
+---
+
+### Problem 2
+**Statement:** The force $\mathbf{F}$ acts on the bracket within the octant shown. If $F = 400\text{ N}$, $\beta = 60^\circ$, and $\gamma = 45^\circ$, determine the $x, y, z$ components of $\mathbf{F}$[cite: 18].
+
+**Solution:**
+
+* Using $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$[cite: 10]:
+  $$\cos^2\alpha + \cos^2 60^\circ + \cos^2 45^\circ = 1 \implies \cos\alpha = \pm 0.5$$
+* Since $\mathbf{F}$ is directed into the $-x, +y, +z$ octant ($\alpha = 120^\circ$), $\cos\alpha = -0.5$ (magnitude $\vert{}F_x\vert{} = 200\text{ N}$)[cite: 18]:
+  $$F_x = -400(0.5) = -200\text{ N} \quad (\text{magnitude } 200\text{ N}) \text{[cite: 18]}$$
+  $$F_y = 400\cos 60^\circ = 200\text{ N} \text{[cite: 18]}$$
+  $$F_z = 400\cos 45^\circ = 282.843\text{ N} \text{[cite: 18]}$$
+
+---
+
+### Problem 3
+**Statement:** Determine the magnitude and coordinate direction angles of $\mathbf{F}_2$ so that the resultant of the two forces ($\mathbf{F}_1 = 180\text{ N}$ and $\mathbf{F}_2$) acts along the positive $x$-axis and has a magnitude of $500\text{ N}$[cite: 19].
+
+**Solution:**
+
+1. **Resolve $\mathbf{F}_1 = 180\text{ N}$ into components:** $\mathbf{F}_1$ is inclined $15^\circ$ below the $xy$-plane along a projection line $60^\circ$ from the $+y$ axis toward the $+x$ axis[cite: 19]:
+   $$F_{1x} = (180\cos 15^\circ)\sin 60^\circ = 150.57\text{ N}$$
+   $$F_{1y} = (180\cos 15^\circ)\cos 60^\circ = 86.93\text{ N}$$
+   $$F_{1z} = -180\sin 15^\circ = -46.59\text{ N}$$
+2. **Apply $\mathbf{F}_R = \mathbf{F}_1 + \mathbf{F}_2 = 500\mathbf{i}\text{ N}$[cite: 19]:**
+   $$F_{2x} = 500 - 150.57 = 349.43\text{ N}$$
+   $$F_{2y} = 0 - 86.93 = -86.93\text{ N}$$
+   $$F_{2z} = 0 - (-46.59) = 46.59\text{ N}$$
+3. **Compute the magnitude and coordinate direction angles of $\mathbf{F}_2$:**
+   $$F_2 = \sqrt{(349.43)^2 + (-86.93)^2 + (46.59)^2} = 363.1\text{ N}$$
+   $$\alpha_2 = \cos^{-1}\!\left(\frac{349.43}{363.1}\right) = 15.8^\circ, \quad \beta_2 = \cos^{-1}\!\left(\frac{-86.93}{363.1}\right) = 103.9^\circ, \quad \gamma_2 = \cos^{-1}\!\left(\frac{46.59}{363.1}\right) = 82.6^\circ$$
+
+---
+
+### Problem 4
+**Statement:** The pole is subjected to the force $\mathbf{F}$ which has components $F_x = 1.5\text{ kN}$ and $F_z = 1.25\text{ kN}$. If $\beta = 75^\circ$, determine the magnitudes of $\mathbf{F}$ and $F_y$[cite: 19].
+
+**Solution:**
+
+* Express $F_y$ in terms of $F$: $F_y = F\cos\beta = F\cos 75^\circ$[cite: 9, 19].
+* Substitute into the magnitude relation $F^2 = F_x^2 + F_y^2 + F_z^2$[cite: 8]:
+  $$F^2 = (1.5)^2 + (F\cos 75^\circ)^2 + (1.25)^2 \implies F^2(1 - \cos^2 75^\circ) = 3.8125$$
+  $$F = \frac{\sqrt{3.8125}}{\sin 75^\circ} = 2.02\text{ kN}$$
+  $$F_y = 2.021\cos 75^\circ = 0.523\text{ kN}$$

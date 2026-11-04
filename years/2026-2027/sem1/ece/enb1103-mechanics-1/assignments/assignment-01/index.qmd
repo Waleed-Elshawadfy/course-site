@@ -2,23 +2,110 @@
 title: "Assignment 01: 3D Force & Velocity Vectors"
 description: "Position vectors, unit vectors, velocity vectors, and 3D resultant forces (Problems 5–10)."
 date: 2026-11-04
+jupyter: python3
 format:
   html:
     toc: true
 ---
 
+```{python}
+#| echo: false
+import subprocess
+import tempfile
+from pathlib import Path
+from IPython.display import HTML
+
+def render_tikz(tikz_code: str, scale: float = 1.25) -> HTML:
+    """Compiles a TikZ snippet to an inline SVG using latex + dvisvgm."""
+    tex_doc = f"""\\documentclass[dvisvgm,tikz,border=6pt]{{standalone}}
+\\usepackage{{amsmath,amssymb}}
+\\usepackage{{tikz}}
+\\begin{{document}}
+{tikz_code}
+\\end{{document}}
+"""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmp_path = Path(tmpdir)
+        tex_file = tmp_path / "diagram.tex"
+        dvi_file = tmp_path / "diagram.dvi"
+        svg_file = tmp_path / "diagram.svg"
+        tex_file.write_text(tex_doc, encoding="utf-8")
+
+        subprocess.run(
+            ["latex", "-interaction=nonstopmode", "-halt-on-error", "diagram.tex"],
+            cwd=tmpdir,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+        subprocess.run(
+            ["dvisvgm", "--no-fonts", f"-Z {scale}", "diagram.dvi", "-o", "diagram.svg"],
+            cwd=tmpdir,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+        svg_content = svg_file.read_text(encoding="utf-8")
+    return HTML(f'<div style="text-align: center; margin: 1.2rem 0;">{svg_content}</div>')
+```
+
 ## Instructions
 
-* Solve all **6 problems** (Problems 5–10 from Lecture 01) showing full step-by-step vector formulations[cite: 20, 21, 22].
-* Clearly state the coordinates of every point, the position vector $\mathbf{r}_{AB}$, the unit vector $\mathbf{u}_{AB}$, and the final Cartesian vector components with proper units[cite: 12, 13, 14].
-* Refer to the figures in [Lecture 01 Slides (Pages 20–22)](../assets/Mechanics%20(1)%20ENB%201103-1.pdf)[cite: 20, 21, 22].
+* Solve all **6 problems** (Problems 5–10 from Lecture 01) showing full step-by-step vector formulations.
+* Clearly state the coordinates of every point, the position vector $\mathbf{r}_{AB}$, the unit vector $\mathbf{u}_{AB}$, and the final Cartesian vector components with proper units.
+* Refer to the figures below or in [Lecture 01 Slides (Pages 20–22)](../assets/Mechanics%20(1)%20ENB%201103-1.pdf).
 
 ---
 
 ## Problem Set
 
 ### Problem 1 (Lecture Problem 5)
-Two cables exert forces $F_B = 600\text{ lb}$ and $F_C = 750\text{ lb}$ on the hook at $A(0, 0, 4\text{ ft})$, anchored at $B(3\text{ ft}, -3\text{ ft}, 2.5\text{ ft})$ and $C(2\text{ ft}, 4\text{ ft}, 0\text{ ft})$[cite: 20]. Determine the magnitude and coordinate direction angles of the resultant force acting at $A$[cite: 20].
+Two cables exert forces $F_B = 600\text{ lb}$ and $F_C = 750\text{ lb}$ on the hook at $A(0, 0, 4\text{ ft})$, anchored at $B(3\text{ ft}, -3\text{ ft}, 2.5\text{ ft})$ and $C(2\text{ ft}, 4\text{ ft}, 0\text{ ft})$. Determine the magnitude and coordinate direction angles of the resultant force acting at $A$.
+
+```{python}
+#| echo: false
+render_tikz(r"""
+\begin{tikzpicture}[x={(-0.55cm,-0.42cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}, scale=0.78, >=stealth, line cap=round, line join=round, font=\small]
+  % Shaded floor triangle for C
+  \fill[gray!15] (0,0,0) -- (2,4,0) -- (0,4,0) -- cycle;
+
+  % Axes
+  \draw[->, thick, gray!70!black] (0,0,0) -- (4.8,0,0) node[below left] {$x$};
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,5.2,0) node[right] {$y$};
+  \draw[dashed, thick, gray!70!black] (0,0,0) -- (0,-3.8,0) node[left] {$-y$};
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,0,5.0) node[above] {$z$};
+
+  % Coordinate construction lines for B(3, -3, 2.5)
+  \draw[dashed, gray] (3,0,0) -- (3,-3,0) -- (0,-3,0);
+  \draw[dashed, gray] (3,-3,0) -- (3,-3,2.5);
+  \draw[dashed, gray] (0,0,4) -- (0,-3,4) -- (0,-3,0);
+
+  % Coordinate construction lines for C(2, 4, 0)
+  \draw[dashed, gray] (2,0,0) -- (2,4,0) -- (0,4,0);
+
+  % Dimension labels
+  \node[above, font=\footnotesize] at (0,-1.5,4) {$3\text{ ft}$};
+  \node[left, font=\footnotesize] at (0,0,2.2) {$4\text{ ft}$};
+  \node[below left, font=\footnotesize] at (1.5,-3,0) {$3\text{ ft}$};
+  \node[left, font=\footnotesize] at (3,-3,1.25) {$2.5\text{ ft}$};
+  \node[below, font=\footnotesize] at (1,4,0) {$2\text{ ft}$};
+  \node[above right, font=\footnotesize] at (0,2,0) {$4\text{ ft}$};
+
+  % Cables AB and AC
+  \draw[thick, gray!80!black] (0,0,4) -- (3,-3,2.5);
+  \draw[thick, gray!80!black] (0,0,4) -- (2,4,0);
+
+  % Force Vectors FB and FC
+  \draw[->, ultra thick, blue!80!black] (0,0,4) -- (1.8,-1.8,3.1) node[above left] {$F_B = 600\text{ lb}$};
+  \draw[->, ultra thick, red!80!black] (0,0,4) -- (1.2,2.4,1.6) node[above right] {$F_C = 750\text{ lb}$};
+
+  % Points A, B, C
+  \filldraw[black] (0,0,4) circle (2pt) node[above right] {$A$};
+  \filldraw[black] (3,-3,2.5) circle (2pt) node[above left] {$B$};
+  \filldraw[black] (2,4,0) circle (2pt) node[below right] {$C$};
+\end{tikzpicture}
+""")
+```
 
 ::: {.callout-tip collapse="true"}
 ### Solution Key — Problem 1 (Lecture Problem 5)
@@ -32,7 +119,45 @@ Two cables exert forces $F_B = 600\text{ lb}$ and $F_C = 750\text{ lb}$ on the h
 ---
 
 ### Problem 2 (Lecture Problem 6)
-Two cables attached to ring $A(0, -2\text{ m}, 4\text{ m})$ carry tensions of $600\text{ N}$ (directed toward $B(0, 0, 0)$) and $500\text{ N}$ (directed toward $C$, located at $x_C = 4\text{ m}$ and $8\text{ m}$ in the $+y$ direction from $A$, i.e., $C(4\text{ m}, 6\text{ m}, 0)$)[cite: 20]. Determine the magnitude and the coordinate direction angles of the resultant force[cite: 20].
+Two cables attached to ring $A(0, -2\text{ m}, 4\text{ m})$ carry tensions of $600\text{ N}$ (directed toward $B(0, 0, 0)$) and $500\text{ N}$ (directed toward $C$, located at $x_C = 4\text{ m}$ and $8\text{ m}$ in the $+y$ direction from $A$, i.e., $C(4\text{ m}, 6\text{ m}, 0)$). Determine the magnitude and the coordinate direction angles of the resultant force.
+
+```{python}
+#| echo: false
+render_tikz(r"""
+\begin{tikzpicture}[x={(-0.55cm,-0.42cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}, scale=0.68, >=stealth, line cap=round, line join=round, font=\small]
+  % Axes
+  \draw[->, thick, gray!70!black] (0,0,0) -- (5.5,0,0) node[below left] {$x$};
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,7.2,0) node[right] {$y$};
+  \draw[dashed, thick, gray!70!black] (0,0,0) -- (0,-2.8,0);
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,0,5.2) node[above] {$z$};
+
+  % Coordinate construction lines
+  \draw[dashed, gray] (0,0,4) -- (0,-2,4) -- (0,-2,0) -- (0,0,0);
+  \draw[dashed, gray] (4,0,0) -- (4,6,0) -- (0,6,0);
+  \draw[dashed, gray] (4,-2,0) -- (4,6,0);
+  \draw[dashed, gray] (0,-2,0) -- (4,-2,0);
+
+  % Dimension labels
+  \node[above, font=\footnotesize] at (0,-1,4) {$2\text{ m}$};
+  \node[left, font=\footnotesize] at (0,-2,2) {$4\text{ m}$};
+  \node[below, font=\footnotesize] at (4,2,0) {$8\text{ m}$};
+  \node[below right, font=\footnotesize] at (2,6,0) {$4\text{ m}$};
+
+  % Cables AB and AC
+  \draw[thick, gray!80!black] (0,-2,4) -- (0,0,0);
+  \draw[thick, gray!80!black] (0,-2,4) -- (4,6,0);
+
+  % Force Vectors
+  \draw[->, ultra thick, blue!80!black] (0,-2,4) -- (0,-0.8,1.6) node[left] {$600\text{ N}$};
+  \draw[->, ultra thick, red!80!black] (0,-2,4) -- (2.0,2.0,2.0) node[above right] {$500\text{ N}$};
+
+  % Points A, B, C
+  \filldraw[black] (0,-2,4) circle (2.2pt) node[above left] {$A(0,-2,4)$};
+  \filldraw[black] (0,0,0) circle (2.2pt) node[above right] {$B$};
+  \filldraw[black] (4,6,0) circle (2.2pt) node[below right] {$C(4,6,0)$};
+\end{tikzpicture}
+""")
+```
 
 ::: {.callout-tip collapse="true"}
 ### Solution Key — Problem 2 (Lecture Problem 6)
@@ -45,7 +170,40 @@ Two cables attached to ring $A(0, -2\text{ m}, 4\text{ m})$ carry tensions of $6
 ---
 
 ### Problem 3 (Lecture Problem 7)
-A rifle at $A$ ($z_A = 80\text{ m}$) is fired at a target at $B$ Across a range with horizontal offsets $\Delta x = 160\text{ m}$, $\Delta y = 210\text{ m}$, and $\Delta z = -80\text{ m}$[cite: 21]. If the speed of the bullet is $1800\text{ m/s}$, determine the rectangular form of the velocity vector $\mathbf{v}$[cite: 21].
+A rifle at $A$ ($z_A = 80\text{ m}$) is fired at a target at $B$ across a range with horizontal offsets $\Delta x = 160\text{ m}$, $\Delta y = 210\text{ m}$, and $\Delta z = -80\text{ m}$. If the speed of the bullet is $1800\text{ m/s}$, determine the rectangular form of the velocity vector $\mathbf{v}$.
+
+```{python}
+#| echo: false
+render_tikz(r"""
+\begin{tikzpicture}[x={(-0.55cm,-0.42cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}, scale=0.75, >=stealth, line cap=round, line join=round, font=\small]
+  % Shaded reference planes (scaled: 1 unit = 40 m -> dx=4, dy=5.25, dz=2)
+  \fill[cyan!12] (0,0,0) -- (4,0,0) -- (4,5.25,0) -- (0,5.25,0) -- cycle;
+  \fill[cyan!20] (0,0,0) -- (0,5.25,0) -- (0,5.25,2.2) -- (0,0,2.2) -- cycle;
+
+  % Axes
+  \draw[->, thick, gray!70!black] (0,0,0) -- (5.4,0,0) node[below left] {$x$};
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,6.4,0) node[right] {$y$};
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,0,3.4) node[above] {$z$};
+
+  % Plane outlines
+  \draw[thick, gray!70!black] (4,0,0) -- (4,5.25,0) -- (0,5.25,0);
+  \draw[thick, gray!70!black] (0,0,2.2) -- (0,5.25,2.2) -- (0,5.25,0);
+
+  % Dimension labels
+  \node[left, font=\footnotesize] at (0,0,1.1) {$80\text{ m}$};
+  \node[below left, font=\footnotesize] at (4,2.6,0) {$210\text{ m}$};
+  \node[below right, font=\footnotesize] at (2,5.25,0) {$160\text{ m}$};
+
+  % Trajectory AB and Velocity vector v
+  \draw[dashed, thick, gray!90!black] (0,0,2.2) -- (4,5.25,0);
+  \draw[->, ultra thick, red!80!black] (0,0,2.2) -- (1.8,2.36,1.21) node[below left] {$\mathbf{v}$};
+
+  % Points A and B
+  \filldraw[black] (0,0,2.2) circle (2pt) node[above] {$A$};
+  \filldraw[black] (4,5.25,0) circle (2pt) node[below] {$B$};
+\end{tikzpicture}
+""")
+```
 
 ::: {.callout-tip collapse="true"}
 ### Solution Key — Problem 3 (Lecture Problem 7)
@@ -57,7 +215,48 @@ A rifle at $A$ ($z_A = 80\text{ m}$) is fired at a target at $B$ Across a range 
 ---
 
 ### Problem 4 (Lecture Problem 8)
-The slider travels along the guide rod $AB$ from $A(10\text{ m}, -8\text{ m}, 0)$ to $B(0, 16\text{ m}, 12\text{ m})$ with a velocity $v = 6\text{ m/s}$[cite: 21]. Determine the rectangular representations of (a) the unit vector directed from $A$ toward $B$; and (b) the velocity vector $\mathbf{v}$[cite: 21].
+The slider travels along the guide rod $AB$ from $A(10\text{ m}, -8\text{ m}, 0)$ to $B(0, 16\text{ m}, 12\text{ m})$ with a velocity $v = 6\text{ m/s}$. Determine the rectangular representations of (a) the unit vector directed from $A$ toward $B$; and (b) the velocity vector $\mathbf{v}$.
+
+```{python}
+#| echo: false
+render_tikz(r"""
+\begin{tikzpicture}[x={(-0.55cm,-0.42cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}, scale=0.78, >=stealth, line cap=round, line join=round, font=\small]
+  % Scaled by 1/4: A(2.5, -2.0, 0), B(0, 4.0, 3.0)
+  % Shaded planes
+  \fill[cyan!12] (0,0,0) -- (2.5,0,0) -- (2.5,-2.0,0) -- (0,-2.0,0) -- cycle;
+  \fill[cyan!18] (0,0,0) -- (0,4.0,0) -- (0,4.0,3.0) -- (0,0,3.0) -- cycle;
+
+  % Plane outlines
+  \draw[thick, gray!70!black] (2.5,0,0) -- (2.5,-2.0,0) -- (0,-2.0,0) -- (0,0,0);
+  \draw[thick, gray!70!black] (0,0,3.0) -- (0,4.0,3.0) -- (0,4.0,0);
+
+  % Axes
+  \draw[->, thick, gray!70!black] (0,0,0) -- (4.0,0,0) node[below left] {$x$};
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,5.2,0) node[right] {$y$};
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,0,4.2) node[above] {$z$};
+
+  % Dimension labels
+  \node[above left, font=\footnotesize] at (1.25,-2.0,0) {$8\text{ m}$};
+  \node[below left, font=\footnotesize] at (2.5,-1.0,0) {$10\text{ m}$};
+  \node[above right, font=\footnotesize] at (0,2.0,3.0) {$16\text{ m}$};
+  \node[right, font=\footnotesize] at (0,4.0,1.5) {$12\text{ m}$};
+
+  % Guide rod AB
+  \draw[line width=3.5pt, gray!60!white] (2.5,-2.0,0) -- (0,4.0,3.0);
+  \draw[thick, black] (2.5,-2.0,0) -- (0,4.0,3.0);
+
+  % Slider block on rod at midpoint (1.25, 1.0, 1.5)
+  \filldraw[fill=cyan!40!gray, draw=black, thick] (1.25,1.0,1.5) circle (5pt);
+
+  % Velocity vector v
+  \draw[->, ultra thick, red!80!black] (1.25,1.0,1.75) -- (0.35,3.16,2.83) node[above] {$\mathbf{v} = 6\text{ m/s}$};
+
+  % Points A and B
+  \filldraw[black] (2.5,-2.0,0) circle (2pt) node[left] {$A$};
+  \filldraw[black] (0,4.0,3.0) circle (2pt) node[right] {$B$};
+\end{tikzpicture}
+""")
+```
 
 ::: {.callout-tip collapse="true"}
 ### Solution Key — Problem 4 (Lecture Problem 8)
@@ -70,7 +269,47 @@ The slider travels along the guide rod $AB$ from $A(10\text{ m}, -8\text{ m}, 0)
 ---
 
 ### Problem 5 (Lecture Problem 9)
-Two cables attached to the top of post $C(0, 0, 4\text{ ft})$ exert forces $F_1 = 100\text{ lb}$ (toward $A$, located in the $xy$-plane at radius $3\text{ ft}$ and angle $40^\circ$ from the $+y$ axis toward the $-x$ axis) and $F_2 = 81\text{ lb}$ (toward $B(4\text{ ft}, -7\text{ ft}, 0)$)[cite: 22]. Determine the magnitude and the coordinate direction angles of the resultant force[cite: 22].
+Two cables attached to the top of post $C(0, 0, 4\text{ ft})$ exert forces $F_1 = 100\text{ lb}$ (toward $A$, located in the $xy$-plane at radius $3\text{ ft}$ and angle $40^\circ$ from the $+y$ axis toward the $-x$ axis) and $F_2 = 81\text{ lb}$ (toward $B(4\text{ ft}, -7\text{ ft}, 0)$). Determine the magnitude and the coordinate direction angles of the resultant force.
+
+```{python}
+#| echo: false
+render_tikz(r"""
+\begin{tikzpicture}[x={(-0.55cm,-0.42cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}, scale=0.72, >=stealth, line cap=round, line join=round, font=\small]
+  % Axes
+  \draw[->, thick, gray!70!black] (0,0,0) -- (5.0,0,0) node[below left] {$x$};
+  \draw[dashed, thick, gray!70!black] (0,0,0) -- (-3.0,0,0) node[above right] {$-x$};
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,4.5,0) node[right] {$y$};
+  \draw[dashed, thick, gray!70!black] (0,0,0) -- (0,-5.5,0) node[left] {$-y$};
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,0,5.2) node[above] {$z$};
+
+  % Vertical Post OC
+  \draw[line width=5pt, cyan!60!blue] (0,0,0) -- (0,0,4);
+  \node[right, font=\footnotesize] at (0,0,2.0) {$4\text{ ft}$};
+
+  % Point B(4, -5, 0) schematic for (4 ft, -7 ft, 0)
+  \draw[dashed, gray] (3.5,0,0) -- (3.5,-5.0,0) -- (0,-5.0,0);
+  \node[below left, font=\footnotesize] at (3.5,-2.5,0) {$7\text{ ft}$};
+  \node[below right, font=\footnotesize] at (1.75,-5.0,0) {$4\text{ ft}$};
+
+  % Point A(-1.93, 2.30, 0)
+  \draw[dashed, thick, gray!80!black] (0,0,0) -- (-1.93,2.30,0) node[midway, above left, font=\footnotesize] {$3\text{ ft}$};
+  \draw[->, green!50!black, thick] (0,1.8,0) to[bend right=20] node[above right, font=\footnotesize] {$40^\circ$} (-1.15,1.38,0);
+
+  % Cables CA and CB
+  \draw[thick, gray!80!black] (0,0,4) -- (-1.93,2.30,0);
+  \draw[thick, gray!80!black] (0,0,4) -- (3.5,-5.0,0);
+
+  % Forces F1 and F2
+  \draw[->, ultra thick, red!80!black] (0,0,4) -- (-1.06,1.26,1.8) node[above right] {$F_1 = 100\text{ lb}$};
+  \draw[->, ultra thick, blue!80!black] (0,0,4) -- (1.75,-2.5,2.0) node[above left] {$F_2 = 81\text{ lb}$};
+
+  % Points A, B, C
+  \filldraw[black] (0,0,4) circle (2.2pt) node[above right] {$C$};
+  \filldraw[black] (-1.93,2.30,0) circle (2.2pt) node[right] {$A$};
+  \filldraw[black] (3.5,-5.0,0) circle (2.2pt) node[above left] {$B$};
+\end{tikzpicture}
+""")
+```
 
 ::: {.callout-tip collapse="true"}
 ### Solution Key — Problem 5 (Lecture Problem 9)
@@ -84,7 +323,56 @@ Two cables attached to the top of post $C(0, 0, 4\text{ ft})$ exert forces $F_1 
 ---
 
 ### Problem 6 (Lecture Problem 10)
-The tower of height $24\text{ m}$ at $D(0, 0, 24\text{ m})$ is held in place by three cables anchored at $A(x, y, 0)$, $B(-6\text{ m}, 4\text{ m}, 0)$, and $C(16\text{ m}, -18\text{ m}, 0)$ with forces $F_{DA} = 400\text{ N}$, $F_{DB} = 800\text{ N}$, and $F_{DC} = 600\text{ N}$[cite: 22]. Taking $x = 20\text{ m}$ and $y = 15\text{ m}$, determine the magnitude and coordinate direction angles $\alpha, \beta, \gamma$ of the resultant force[cite: 22].
+The tower of height $24\text{ m}$ at $D(0, 0, 24\text{ m})$ is held in place by three cables anchored at $A(x, y, 0)$, $B(-6\text{ m}, 4\text{ m}, 0)$, and $C(16\text{ m}, -18\text{ m}, 0)$ with forces $F_{DA} = 400\text{ N}$, $F_{DB} = 800\text{ N}$, and $F_{DC} = 600\text{ N}$. Taking $x = 20\text{ m}$ and $y = 15\text{ m}$, determine the magnitude and coordinate direction angles $\alpha, \beta, \gamma$ of the resultant force.
+
+```{python}
+#| echo: false
+render_tikz(r"""
+\begin{tikzpicture}[x={(-0.55cm,-0.42cm)}, y={(1cm,0cm)}, z={(0cm,1cm)}, scale=0.68, >=stealth, line cap=round, line join=round, font=\small]
+  % Scaled by 1/4: D(0,0,6), A(5, 3.75, 0), B(-1.5, 1.0, 0), C(4, -4.5, 0)
+  % Axes
+  \draw[->, thick, gray!70!black] (0,0,0) -- (6.2,0,0) node[below left] {$x$};
+  \draw[dashed, thick, gray!70!black] (0,0,0) -- (-2.5,0,0);
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,5.2,0) node[right] {$y$};
+  \draw[dashed, thick, gray!70!black] (0,0,0) -- (0,-5.2,0);
+  \draw[->, thick, gray!70!black] (0,0,0) -- (0,0,7.0) node[above] {$z$};
+  \node[below right] at (0,0,0) {$O$};
+
+  % Coordinate construction lines
+  \draw[dashed, gray] (5,0,0) -- (5,3.75,0) -- (0,3.75,0);
+  \draw[dashed, gray] (-1.5,0,0) -- (-1.5,1.0,0) -- (0,1.0,0);
+  \draw[dashed, gray] (4,0,0) -- (4,-4.5,0) -- (0,-4.5,0);
+
+  % Dimension labels
+  \node[below, font=\footnotesize] at (5,1.8,0) {$y = 15\text{ m}$};
+  \node[below right, font=\footnotesize] at (2.5,3.75,0) {$x = 20\text{ m}$};
+  \node[above right, font=\footnotesize] at (-1.5,0.5,0) {$4\text{ m}$};
+  \node[above, font=\footnotesize] at (-0.75,1.0,0) {$6\text{ m}$};
+  \node[above left, font=\footnotesize] at (2,-4.5,0) {$16\text{ m}$};
+  \node[below left, font=\footnotesize] at (4,-2.25,0) {$18\text{ m}$};
+  \node[left, font=\footnotesize] at (0,0,3.0) {$24\text{ m}$};
+
+  % Tower OD
+  \draw[line width=4pt, gray!60!black] (0,0,0) -- (0,0,6);
+
+  % Cables DA, DB, DC
+  \draw[thick, gray!80!black] (0,0,6) -- (5,3.75,0);
+  \draw[thick, gray!80!black] (0,0,6) -- (-1.5,1.0,0);
+  \draw[thick, gray!80!black] (0,0,6) -- (4,-4.5,0);
+
+  % Force Vectors at D
+  \draw[->, ultra thick, blue!80!black] (0,0,6) -- (2.0,1.5,3.6) node[below left] {$400\text{ N}$};
+  \draw[->, ultra thick, green!55!black] (0,0,6) -- (-0.68,0.45,3.3) node[right] {$800\text{ N}$};
+  \draw[->, ultra thick, red!80!black] (0,0,6) -- (1.6,-1.8,3.6) node[above left] {$600\text{ N}$};
+
+  % Points D, A, B, C
+  \filldraw[black] (0,0,6) circle (2.2pt) node[above right] {$D$};
+  \filldraw[black] (5,3.75,0) circle (2.2pt) node[below] {$A$};
+  \filldraw[black] (-1.5,1.0,0) circle (2.2pt) node[above right] {$B$};
+  \filldraw[black] (4,-4.5,0) circle (2.2pt) node[left] {$C$};
+\end{tikzpicture}
+""")
+```
 
 ::: {.callout-tip collapse="true"}
 ### Solution Key — Problem 6 (Lecture Problem 10)
